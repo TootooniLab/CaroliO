@@ -1,0 +1,936 @@
+Prefix(:=<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(Link:=<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(untitled-ontology-5:=<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#>)
+
+
+Ontology(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5>
+Annotation(untitled-ontology-5:Contributed_by "M. Samie Tootooni <mtootooni@luc.edu>
+Julie Slezak
+Steve J. Scaglione"^^xsd:string)
+Annotation(untitled-ontology-5:has_obo_namespace "carolio"^^xsd:string)
+Annotation(untitled-ontology-5:title "Caroli ontology - basic version"^^xsd:string)
+Annotation(rdfs:comment "CaroliO is an Ontology desined for describing the symptoms, treatment, and outcomes of Caroli's disease. This ontology uses relation ontology (RO), symptom ontology (SO) and Disease Ontology (DO) as upper level ontology.")
+Annotation(owl:versionInfo "VB1.2"^^xsd:string)
+
+Declaration(Class(untitled-ontology-5:CarolisDisease))
+Declaration(Class(untitled-ontology-5:ValuePartition))
+Declaration(Class(untitled-ontology-5:abdominal_tenderness))
+Declaration(Class(untitled-ontology-5:acute_pain))
+Declaration(Class(untitled-ontology-5:adominalSymptom))
+Declaration(Class(untitled-ontology-5:altered_mental_status))
+Declaration(Class(untitled-ontology-5:antibiotics))
+Declaration(Class(untitled-ontology-5:antiemetic))
+Declaration(Class(untitled-ontology-5:ascites))
+Declaration(Class(untitled-ontology-5:bacterial_disease))
+Declaration(Class(untitled-ontology-5:bile_acid))
+Declaration(Class(untitled-ontology-5:bile_duct_cancer))
+Declaration(Class(untitled-ontology-5:bile_duct_disease))
+Declaration(Class(untitled-ontology-5:billary_tract_disease))
+Declaration(Class(untitled-ontology-5:caroli_syndrome))
+Declaration(Class(untitled-ontology-5:chemotherapy))
+Declaration(Class(untitled-ontology-5:cholangiocarcinoma))
+Declaration(Class(untitled-ontology-5:cholangitis))
+Declaration(Class(untitled-ontology-5:choledochal_cyst))
+Declaration(Class(untitled-ontology-5:cholelithiasis))
+Declaration(Class(untitled-ontology-5:digestiveSystemSymptom))
+Declaration(Class(untitled-ontology-5:disease))
+Declaration(Class(untitled-ontology-5:diuretics))
+Declaration(Class(untitled-ontology-5:drain_bile_duct))
+Declaration(Class(untitled-ontology-5:dyspepsia))
+Declaration(Class(untitled-ontology-5:endoscopic_band_ligation))
+Declaration(Class(untitled-ontology-5:endoscopic_retrograde_cholangiopancreatography))
+Declaration(Class(untitled-ontology-5:endoscopic_treatment))
+Declaration(Class(untitled-ontology-5:feces_and_droppings_symptom))
+Declaration(Class(untitled-ontology-5:fever))
+Declaration(Class(untitled-ontology-5:fever_specifications))
+Declaration(Class(untitled-ontology-5:gallbladder_disease))
+Declaration(Class(untitled-ontology-5:gastrointestinal_bleeding))
+Declaration(Class(untitled-ontology-5:gastrointestinal_system_disease))
+Declaration(Class(untitled-ontology-5:hematemesis))
+Declaration(Class(untitled-ontology-5:hematochezia))
+Declaration(Class(untitled-ontology-5:hepatic_abscess))
+Declaration(Class(untitled-ontology-5:hepatobillary_disease))
+Declaration(Class(untitled-ontology-5:high_fever))
+Declaration(Class(untitled-ontology-5:interventional_radiologic_procedure))
+Declaration(Class(untitled-ontology-5:itching))
+Declaration(Class(untitled-ontology-5:jaundice))
+Declaration(Class(untitled-ontology-5:jejunostomy))
+Declaration(Class(untitled-ontology-5:liver_disesase))
+Declaration(Class(untitled-ontology-5:liver_symptom))
+Declaration(Class(untitled-ontology-5:local_regional_therapy))
+Declaration(Class(untitled-ontology-5:melena))
+Declaration(Class(untitled-ontology-5:mild))
+Declaration(Class(untitled-ontology-5:moderate))
+Declaration(Class(untitled-ontology-5:nausea))
+Declaration(Class(untitled-ontology-5:nervousSystemSymptom))
+Declaration(Class(untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom))
+Declaration(Class(untitled-ontology-5:non_recurrent_symptom_status))
+Declaration(Class(untitled-ontology-5:none))
+Declaration(Class(untitled-ontology-5:octreotide))
+Declaration(Class(untitled-ontology-5:pain))
+Declaration(Class(untitled-ontology-5:paracentesis))
+Declaration(Class(untitled-ontology-5:percutaneous_aspiration_or_drainage))
+Declaration(Class(untitled-ontology-5:percutaneous_transhepatic_cholangeography))
+Declaration(Class(untitled-ontology-5:pharmaceutical_treatments))
+Declaration(Class(untitled-ontology-5:portal_hypertension))
+Declaration(Class(untitled-ontology-5:proton_pump_inhibitor))
+Declaration(Class(untitled-ontology-5:puritic_treatment))
+Declaration(Class(untitled-ontology-5:radiation_therapy))
+Declaration(Class(untitled-ontology-5:recurrency_value))
+Declaration(Class(untitled-ontology-5:recurrent))
+Declaration(Class(untitled-ontology-5:remove_gall_stone))
+Declaration(Class(untitled-ontology-5:roux_en_y))
+Declaration(Class(untitled-ontology-5:sensation_perception))
+Declaration(Class(untitled-ontology-5:sepsis))
+Declaration(Class(untitled-ontology-5:severe))
+Declaration(Class(untitled-ontology-5:skinAndIntegumentarySystemSymptom))
+Declaration(Class(untitled-ontology-5:stent_placement))
+Declaration(Class(untitled-ontology-5:surgical))
+Declaration(Class(untitled-ontology-5:symptomsOfCarolisDisease))
+Declaration(Class(untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt))
+Declaration(Class(untitled-ontology-5:transplant))
+Declaration(Class(untitled-ontology-5:treatment))
+Declaration(Class(untitled-ontology-5:upper_right_quadrant_tenderness))
+Declaration(Class(untitled-ontology-5:visceral_pain))
+Declaration(Class(untitled-ontology-5:vomiting))
+Declaration(Class(untitled-ontology-5:widen_bile_duct))
+Declaration(Class(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding>))
+Declaration(ObjectProperty(untitled-ontology-5:hasOutome))
+Declaration(ObjectProperty(untitled-ontology-5:has_painscale))
+Declaration(ObjectProperty(untitled-ontology-5:has_sign))
+Declaration(ObjectProperty(untitled-ontology-5:has_symptom))
+Declaration(ObjectProperty(untitled-ontology-5:has_treatment))
+Declaration(ObjectProperty(untitled-ontology-5:isOutcomeof))
+Declaration(ObjectProperty(untitled-ontology-5:is_painscale_of))
+Declaration(ObjectProperty(untitled-ontology-5:is_sign_of))
+Declaration(ObjectProperty(untitled-ontology-5:is_symptom_of))
+Declaration(ObjectProperty(untitled-ontology-5:is_treatment_of))
+Declaration(DataProperty(untitled-ontology-5:hasPainScaleValue))
+Declaration(DataProperty(untitled-ontology-5:hasRecurrentValue))
+Declaration(AnnotationProperty(untitled-ontology-5:Contributed_by))
+Declaration(AnnotationProperty(untitled-ontology-5:database_cross_reference))
+Declaration(AnnotationProperty(untitled-ontology-5:has_alternative_id))
+Declaration(AnnotationProperty(untitled-ontology-5:has_exact_synonym))
+Declaration(AnnotationProperty(untitled-ontology-5:has_obo_namespace))
+Declaration(AnnotationProperty(untitled-ontology-5:id))
+Declaration(AnnotationProperty(untitled-ontology-5:syn))
+Declaration(AnnotationProperty(untitled-ontology-5:title))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: untitled-ontology-5:has_alternative_id (untitled-ontology-5:has_alternative_id)
+
+SubAnnotationPropertyOf(untitled-ontology-5:has_alternative_id untitled-ontology-5:id)
+
+# Annotation Property: untitled-ontology-5:syn (untitled-ontology-5:syn)
+
+SubAnnotationPropertyOf(untitled-ontology-5:syn rdfs:label)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: untitled-ontology-5:hasOutome (has_outcome)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:hasOutome "outcome can be either pre diagnosis or post
+also can be called a consequence")
+AnnotationAssertion(rdfs:label untitled-ontology-5:hasOutome "has_outcome")
+InverseObjectProperties(untitled-ontology-5:hasOutome untitled-ontology-5:isOutcomeof)
+TransitiveObjectProperty(untitled-ontology-5:hasOutome)
+
+# Object Property: untitled-ontology-5:has_painscale (untitled-ontology-5:has_painscale)
+
+InverseObjectProperties(untitled-ontology-5:has_painscale untitled-ontology-5:is_painscale_of)
+FunctionalObjectProperty(untitled-ontology-5:has_painscale)
+
+# Object Property: untitled-ontology-5:has_sign (untitled-ontology-5:has_sign)
+
+InverseObjectProperties(untitled-ontology-5:has_sign untitled-ontology-5:is_sign_of)
+TransitiveObjectProperty(untitled-ontology-5:has_sign)
+ReflexiveObjectProperty(untitled-ontology-5:has_sign)
+
+# Object Property: untitled-ontology-5:has_symptom (untitled-ontology-5:has_symptom)
+
+InverseObjectProperties(untitled-ontology-5:has_symptom untitled-ontology-5:is_symptom_of)
+TransitiveObjectProperty(untitled-ontology-5:has_symptom)
+
+# Object Property: untitled-ontology-5:has_treatment (untitled-ontology-5:has_treatment)
+
+InverseObjectProperties(untitled-ontology-5:has_treatment untitled-ontology-5:is_treatment_of)
+ObjectPropertyRange(untitled-ontology-5:has_treatment untitled-ontology-5:treatment)
+
+# Object Property: untitled-ontology-5:isOutcomeof (is_outcome_of)
+
+AnnotationAssertion(rdfs:label untitled-ontology-5:isOutcomeof "is_outcome_of")
+TransitiveObjectProperty(untitled-ontology-5:isOutcomeof)
+
+# Object Property: untitled-ontology-5:is_painscale_of (untitled-ontology-5:is_painscale_of)
+
+ObjectPropertyDomain(untitled-ontology-5:is_painscale_of untitled-ontology-5:fever_specifications)
+
+# Object Property: untitled-ontology-5:is_sign_of (untitled-ontology-5:is_sign_of)
+
+TransitiveObjectProperty(untitled-ontology-5:is_sign_of)
+ReflexiveObjectProperty(untitled-ontology-5:is_sign_of)
+
+# Object Property: untitled-ontology-5:is_symptom_of (untitled-ontology-5:is_symptom_of)
+
+TransitiveObjectProperty(untitled-ontology-5:is_symptom_of)
+
+# Object Property: untitled-ontology-5:is_treatment_of (untitled-ontology-5:is_treatment_of)
+
+ObjectPropertyDomain(untitled-ontology-5:is_treatment_of untitled-ontology-5:treatment)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: untitled-ontology-5:hasPainScaleValue (untitled-ontology-5:hasPainScaleValue)
+
+FunctionalDataProperty(untitled-ontology-5:hasPainScaleValue)
+
+# Data Property: untitled-ontology-5:hasRecurrentValue (untitled-ontology-5:hasRecurrentValue)
+
+SubDataPropertyOf(untitled-ontology-5:hasRecurrentValue owl:topDataProperty)
+FunctionalDataProperty(untitled-ontology-5:hasRecurrentValue)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: untitled-ontology-5:CarolisDisease (caroli_disease)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:CarolisDisease "MESH:D016767")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:CarolisDisease "SNOMEDCT_US_2020_09_01:717232005")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:CarolisDisease "UMLS_CUI:C0162510")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:CarolisDisease "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:CarolisDisease "DOID:0050876")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:CarolisDisease "A bile duct disease that is characterized by abnormal dilatation of the intrahepatic bile ducts.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:CarolisDisease "caroli_disease")
+SubClassOf(untitled-ontology-5:CarolisDisease untitled-ontology-5:bile_duct_disease)
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:cholangitis))
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:choledochal_cyst))
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:cholelithiasis))
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:upper_right_quadrant_tenderness))
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:dyspepsia))
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:fever))
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:hepatic_abscess))
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:itching))
+
+# Class: untitled-ontology-5:abdominal_tenderness (abdominal_tenderness)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:abdominal_tenderness "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:abdominal_tenderness "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:abdominal_tenderness "SYMP:0000484")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:abdominal_tenderness "when pressure on your stomach causes pain")
+AnnotationAssertion(rdfs:label untitled-ontology-5:abdominal_tenderness "abdominal_tenderness")
+SubClassOf(untitled-ontology-5:abdominal_tenderness untitled-ontology-5:adominalSymptom)
+SubClassOf(untitled-ontology-5:abdominal_tenderness ObjectSomeValuesFrom(untitled-ontology-5:has_painscale untitled-ontology-5:fever_specifications))
+
+# Class: untitled-ontology-5:acute_pain (acute_pain)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:acute_pain "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:acute_pain "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:acute_pain "SYMP:0000839")
+AnnotationAssertion(rdfs:comment untitled-ontology-5:acute_pain "pain of short duration, lt= 3month")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:acute_pain "\"Acute pain is a pain that is severe but lasts a relatively short time.\"^^xsd:string")
+AnnotationAssertion(rdfs:label untitled-ontology-5:acute_pain "acute_pain")
+SubClassOf(untitled-ontology-5:acute_pain untitled-ontology-5:pain)
+
+# Class: untitled-ontology-5:adominalSymptom (abdominal_symptom)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:adominalSymptom "DIOD:005076")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:adominalSymptom "symptoms")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:adominalSymptom "SYMP:0000461")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:adominalSymptom "symptoms in the stomach")
+AnnotationAssertion(rdfs:label untitled-ontology-5:adominalSymptom "abdominal_symptom")
+SubClassOf(untitled-ontology-5:adominalSymptom untitled-ontology-5:symptomsOfCarolisDisease)
+
+# Class: untitled-ontology-5:altered_mental_status (untitled-ontology-5:altered_mental_status)
+
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:altered_mental_status "symptoms")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:altered_mental_status "id SYMP:0000682")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:altered_mental_status "This condition causes changes in consciousness and symptoms that can affect many organ systems. Many causes are treatable and don’t affect long-term well-being.")
+SubClassOf(untitled-ontology-5:altered_mental_status untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom)
+
+# Class: untitled-ontology-5:antibiotics (antibiotic)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:antibiotics "treatment with oral or intervenous agents to erradicate bacterial infections")
+AnnotationAssertion(rdfs:label untitled-ontology-5:antibiotics "antibiotic")
+SubClassOf(untitled-ontology-5:antibiotics untitled-ontology-5:pharmaceutical_treatments)
+
+# Class: untitled-ontology-5:antiemetic (untitled-ontology-5:antiemetic)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:antiemetic "An antiemetic is a drug that is effective against vomiting and nausea. Antiemetics are typically used to treat motion sickness and the side effects of opioid analgesics, general anaesthetics, and chemotherapy directed against cancer")
+SubClassOf(untitled-ontology-5:antiemetic untitled-ontology-5:pharmaceutical_treatments)
+
+# Class: untitled-ontology-5:ascites (untitled-ontology-5:ascites)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:ascites "ICD9CM_2005:789.5")
+AnnotationAssertion(untitled-ontology-5:has_exact_synonym untitled-ontology-5:ascites "hydroperitoneum")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:ascites "synptoms")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:ascites "SYMP: 0000526")
+AnnotationAssertion(rdfs:comment untitled-ontology-5:ascites "")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:ascites "An abdominal symptom consisting of an abnormal accumulation of serous fluid in the spaces between tissues and organs in the cavity of the abdomen.")
+SubClassOf(untitled-ontology-5:ascites untitled-ontology-5:adominalSymptom)
+SubClassOf(untitled-ontology-5:ascites ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:diuretics))
+SubClassOf(untitled-ontology-5:ascites ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:paracentesis))
+SubClassOf(untitled-ontology-5:ascites ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt))
+
+# Class: untitled-ontology-5:bacterial_disease (bacterial_infectious_disease)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bacterial_disease "ICD10CM:A49.9")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bacterial_disease "MESH:D001424")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bacterial_disease "NCI:C2890")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bacterial_disease "SNOMEDCT_US_2020_09_01:87628006")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bacterial_disease "UMLS_CUI:C0004623")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:bacterial_disease "disease ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:bacterial_disease "DOID: 104")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:bacterial_disease "definition A disease by infectious agent that results_in infection, has_material_basis_in Bacteria.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:bacterial_disease "bacterial_infectious_disease")
+SubClassOf(untitled-ontology-5:bacterial_disease untitled-ontology-5:disease)
+
+# Class: untitled-ontology-5:bile_acid (bile_acid)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:bile_acid "oral treatment to improve viscosity of bile")
+AnnotationAssertion(rdfs:label untitled-ontology-5:bile_acid "bile_acid")
+SubClassOf(untitled-ontology-5:bile_acid untitled-ontology-5:pharmaceutical_treatments)
+
+# Class: untitled-ontology-5:bile_duct_cancer (bile duct cancer)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_cancer "ICD10CM:C24.0")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_cancer "MESH:D001650")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_cancer "NCI:C2898")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_cancer "NCI:C7483")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_cancer "SNOMEDCT_US_2020_09_01:93790004")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_cancer "UMLS_CUI:C0005396")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_cancer "UMLS_CUI:C0153453")
+AnnotationAssertion(untitled-ontology-5:has_alternative_id untitled-ontology-5:bile_duct_cancer "DOID:10019")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:bile_duct_cancer "disease ontology")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:bile_duct_cancer "disesase ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:bile_duct_cancer "DOID: 4606")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:bile_duct_cancer "A biliary tract cancer that is located_in the bile duct.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:bile_duct_cancer "bile duct cancer")
+SubClassOf(untitled-ontology-5:bile_duct_cancer untitled-ontology-5:bile_duct_disease)
+
+# Class: untitled-ontology-5:bile_duct_disease (bile_duct_disease)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_disease "MESH:D001649")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_disease "SNOMEDCT_US_2020_09_01:118926004")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:bile_duct_disease "UMLS_CUI:C0005395")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:bile_duct_disease "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:bile_duct_disease "DOID:4138")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:bile_duct_disease "disease of the bile ducts")
+AnnotationAssertion(rdfs:label untitled-ontology-5:bile_duct_disease "bile_duct_disease")
+SubClassOf(untitled-ontology-5:bile_duct_disease untitled-ontology-5:billary_tract_disease)
+
+# Class: untitled-ontology-5:billary_tract_disease (bilary_tract_disease)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:billary_tract_disease "ICD10CM:K83.9")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:billary_tract_disease "MESH:D001660")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:billary_tract_disease "SNOMEDCT_US_2020_09_01:5235004")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:billary_tract_disease "UMLS_CUI:C0005424")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:billary_tract_disease "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:billary_tract_disease "DOID:9741")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:billary_tract_disease "disease of the billary tract")
+AnnotationAssertion(rdfs:label untitled-ontology-5:billary_tract_disease "bilary_tract_disease")
+SubClassOf(untitled-ontology-5:billary_tract_disease untitled-ontology-5:hepatobillary_disease)
+
+# Class: untitled-ontology-5:caroli_syndrome (untitled-ontology-5:caroli_syndrome)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:caroli_syndrome "A bile duct disease characterized by multiple segmental cystic or saccular dilatations of intrahepatic bile ducts associated with congenital hepatic fibrosis.")
+SubClassOf(untitled-ontology-5:caroli_syndrome untitled-ontology-5:bile_duct_disease)
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:cholangiocarcinoma))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:cholangitis))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:choledochal_cyst))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:cholelithiasis))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:portal_hypertension))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:upper_right_quadrant_tenderness))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:ascites))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:dyspepsia))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:fever))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:hepatic_abscess))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:itching))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom <http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding>))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:bile_acid))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:jejunostomy))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:puritic_treatment))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:roux_en_y))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transplant))
+
+# Class: untitled-ontology-5:chemotherapy (untitled-ontology-5:chemotherapy)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:chemotherapy "A pharmaceutical treatment that uses powerful chemicals to kill fast-growing cells in your body.")
+SubClassOf(untitled-ontology-5:chemotherapy untitled-ontology-5:pharmaceutical_treatments)
+
+# Class: untitled-ontology-5:cholangiocarcinoma (cholangiocarcinoma)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangiocarcinoma "ICD10CM:C22.1")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangiocarcinoma "MESH:D018281")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangiocarcinoma "NCI:C4436")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangiocarcinoma "NCI:C8265")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangiocarcinoma "SNOMEDCT_US_2020_09_01:70179006")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangiocarcinoma "UMLS_CUI:C0206698")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangiocarcinoma "UMLS_CUI:C0280725")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:cholangiocarcinoma "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:cholangiocarcinoma "DOID:4947")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:cholangiocarcinoma "has_alternative_id 
+DOID:5249")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:cholangiocarcinoma "definition \"A bile duct adenocarcinoma that has_material_basis_in bile duct epithelial cells.\"^^xsd:string")
+AnnotationAssertion(rdfs:label untitled-ontology-5:cholangiocarcinoma "cholangiocarcinoma")
+SubClassOf(untitled-ontology-5:cholangiocarcinoma untitled-ontology-5:bile_duct_cancer)
+SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:chemotherapy))
+SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:jejunostomy))
+SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:local_regional_therapy))
+SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:radiation_therapy))
+SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transplant))
+
+# Class: untitled-ontology-5:cholangitis (cholangitis)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangitis "ICD10CM:K83.0")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangitis "ICD9CM:576.1")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangitis "MESH:D002761")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangitis "NCI:C26718")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangitis "SNOMEDCT_US_2020_09_01:155831003")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholangitis "UMLS_CUI:C0008311")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:cholangitis "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:cholangitis "DOID:9446")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:cholangitis "Ascending cholangitis, also known as acute cholangitis or simply cholangitis, is inflammation of the bile duct (cholangitis), usually caused by bacteria ascending from its junction with the duodenum (first part of the small intestine). It tends to occur if the bile duct is already partially obstructed by gallstones")
+AnnotationAssertion(rdfs:label untitled-ontology-5:cholangitis "cholangitis")
+SubClassOf(untitled-ontology-5:cholangitis untitled-ontology-5:bile_duct_disease)
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:sepsis))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:acute_pain))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:altered_mental_status))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:fever))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:hepatic_abscess))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:itching))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:jaundice))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:nausea))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:visceral_pain))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:antibiotics))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:percutaneous_transhepatic_cholangeography))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:remove_gall_stone))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:stent_placement))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transplant))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:widen_bile_duct))
+SubClassOf(untitled-ontology-5:cholangitis DataSomeValuesFrom(untitled-ontology-5:hasRecurrentValue xsd:integer))
+
+# Class: untitled-ontology-5:choledochal_cyst (choledochal cyst)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:choledochal_cyst "ICD10CM:Q44.4")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:choledochal_cyst "MESH:D015529")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:choledochal_cyst "NCI:C2943")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:choledochal_cyst "SNOMEDCT_US_2020_09_01:30533003")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:choledochal_cyst "UMLS_CUI:C0008340")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:choledochal_cyst "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:choledochal_cyst "DOID:899")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:choledochal_cyst "congenital anomaly of the duct (tube) that transports bile from the liver to the gall bladder and small intestine.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:choledochal_cyst "choledochal cyst")
+SubClassOf(untitled-ontology-5:choledochal_cyst untitled-ontology-5:bile_duct_disease)
+
+# Class: untitled-ontology-5:cholelithiasis (cholelithiasis)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholelithiasis "ICD9CM:574.5")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholelithiasis "SNOMEDCT_US_2020_09_01:197397004")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:cholelithiasis "UMLS_CUI:C0006739")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:cholelithiasis "disease ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:cholelithiasis "DOID:10211")
+AnnotationAssertion(rdfs:label untitled-ontology-5:cholelithiasis "cholelithiasis")
+SubClassOf(untitled-ontology-5:cholelithiasis untitled-ontology-5:gallbladder_disease)
+SubClassOf(untitled-ontology-5:cholelithiasis ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:cholangitis))
+SubClassOf(untitled-ontology-5:cholelithiasis ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:upper_right_quadrant_tenderness))
+
+# Class: untitled-ontology-5:digestiveSystemSymptom (digestive_system_symptom)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:digestiveSystemSymptom "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:digestiveSystemSymptom "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:digestiveSystemSymptom "SYMP:0000459")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:digestiveSystemSymptom "symptoms in the digestive system consists of the gastrointestinal tract plus the accessory organs of digestion.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:digestiveSystemSymptom "digestive_system_symptom")
+SubClassOf(untitled-ontology-5:digestiveSystemSymptom untitled-ontology-5:symptomsOfCarolisDisease)
+
+# Class: untitled-ontology-5:disease (disease)
+
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:disease "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:disease "DOID:4")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:disease "\"A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.\"^^xsd:string")
+AnnotationAssertion(rdfs:label untitled-ontology-5:disease "disease")
+SubClassOf(untitled-ontology-5:disease owl:Thing)
+
+# Class: untitled-ontology-5:diuretics (untitled-ontology-5:diuretics)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:diuretics "diuretic is any substance that promotes diuresis, the increased production of urine. This includes forced diuresis. A diuretic tablet is sometimes colloquially called a water tablet. There are several categories of diuretics. All diuretics increase the excretion of water from the body, through the kidneys.")
+SubClassOf(untitled-ontology-5:diuretics untitled-ontology-5:pharmaceutical_treatments)
+
+# Class: untitled-ontology-5:drain_bile_duct (drain_bile_duct)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:drain_bile_duct "")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:drain_bile_duct "use a tube to enlarge and drain bile duct")
+AnnotationAssertion(rdfs:label untitled-ontology-5:drain_bile_duct "drain_bile_duct")
+SubClassOf(untitled-ontology-5:drain_bile_duct untitled-ontology-5:endoscopic_retrograde_cholangiopancreatography)
+
+# Class: untitled-ontology-5:dyspepsia (abdominal_discomfot)
+
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:dyspepsia "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:dyspepsia "SYMP:0000188")
+AnnotationAssertion(rdfs:comment untitled-ontology-5:dyspepsia "syn: abdominal pain")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:dyspepsia "stomach pain")
+AnnotationAssertion(rdfs:label untitled-ontology-5:dyspepsia "abdominal_discomfot")
+SubClassOf(untitled-ontology-5:dyspepsia untitled-ontology-5:digestiveSystemSymptom)
+
+# Class: untitled-ontology-5:endoscopic_band_ligation (endoscopic_band_ligation_treatment)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:endoscopic_band_ligation "procedure that uses elastic bands to treat enlarged veins, or varices, in your esophagus. These abnormal veins develop in the esophagus and have thin walls with high blood pressure running through them. required EGD ADDED")
+AnnotationAssertion(rdfs:label untitled-ontology-5:endoscopic_band_ligation "endoscopic_band_ligation_treatment")
+SubClassOf(untitled-ontology-5:endoscopic_band_ligation untitled-ontology-5:endoscopic_treatment)
+
+# Class: untitled-ontology-5:endoscopic_retrograde_cholangiopancreatography (endoscopic_retrograde_cholangiopancreatography_treatment)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:endoscopic_retrograde_cholangiopancreatography "Endoscopic retrograde cholangiopancreatography (ERCP) is a procedure that combines upper gastrointestinal (GI) endoscopy and x-rays to treat problems of the bile and pancreatic ducts.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:endoscopic_retrograde_cholangiopancreatography "endoscopic_retrograde_cholangiopancreatography_treatment")
+SubClassOf(untitled-ontology-5:endoscopic_retrograde_cholangiopancreatography untitled-ontology-5:endoscopic_treatment)
+
+# Class: untitled-ontology-5:endoscopic_treatment (untitled-ontology-5:endoscopic_treatment)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:endoscopic_treatment "A general term for treatments performed using an endoscope. An endoscope is a small, tube-like instrument that is inserted into the body through a tiny incision or a body opening, such as the mouth. ,")
+SubClassOf(untitled-ontology-5:endoscopic_treatment untitled-ontology-5:treatment)
+
+# Class: untitled-ontology-5:feces_and_droppings_symptom (stool symptoms)
+
+AnnotationAssertion(untitled-ontology-5:has_exact_synonym untitled-ontology-5:feces_and_droppings_symptom "feces_and_droppings_syndrome")
+AnnotationAssertion(rdfs:label untitled-ontology-5:feces_and_droppings_symptom "stool symptoms")
+SubClassOf(untitled-ontology-5:feces_and_droppings_symptom untitled-ontology-5:digestiveSystemSymptom)
+
+# Class: untitled-ontology-5:fever (untitled-ontology-5:fever)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:fever "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:fever "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:fever "SYMP:0000613")
+AnnotationAssertion(rdfs:comment untitled-ontology-5:fever "syn: pyrexia, temperature")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:fever "\"Fever is a neurological and physiological symptom characterized by a rise of body temperature above the normal whether a natural response (as to infection) or artificially induced for therapeutic reasons.\"^^xsd:string")
+SubClassOf(untitled-ontology-5:fever untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom)
+
+# Class: untitled-ontology-5:fever_specifications (pain_scale)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:fever_specifications "0= no pain
+1-3=mild pain
+4-6= moderate pain
+7-10=extreme pain")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:fever_specifications "Pain scale:https://www.healthline.com/health/pain-scale#types
+
+
+***ASK steve can we move pain scale under pain in symptom ontology?
+probably sami needs to work on this- plus open symptom ontology and ask steve what other pain should be included")
+AnnotationAssertion(rdfs:label untitled-ontology-5:fever_specifications "pain_scale")
+EquivalentClasses(untitled-ontology-5:fever_specifications ObjectUnionOf(untitled-ontology-5:mild untitled-ontology-5:moderate untitled-ontology-5:none untitled-ontology-5:severe))
+SubClassOf(untitled-ontology-5:fever_specifications untitled-ontology-5:ValuePartition)
+
+# Class: untitled-ontology-5:gallbladder_disease (untitled-ontology-5:gallbladder_disease)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:gallbladder_disease "ICD10CM:K82.9")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:gallbladder_disease "ICD9CM:575.9")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:gallbladder_disease "MESH:D005705")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:gallbladder_disease "NCI:C34631")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:gallbladder_disease "SNOMEDCT_US_2020_09_01:155807008")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:gallbladder_disease "disease ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:gallbladder_disease "DOID:0060262")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:gallbladder_disease "A gastrointestinal system disease that is located_in the gallbladder")
+SubClassOf(untitled-ontology-5:gallbladder_disease untitled-ontology-5:gastrointestinal_system_disease)
+
+# Class: untitled-ontology-5:gastrointestinal_bleeding (untitled-ontology-5:gastrointestinal_bleeding)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:gastrointestinal_bleeding "bleeding in the gastro intestimal system")
+SubClassOf(untitled-ontology-5:gastrointestinal_bleeding untitled-ontology-5:digestiveSystemSymptom)
+
+# Class: untitled-ontology-5:gastrointestinal_system_disease (untitled-ontology-5:gastrointestinal_system_disease)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:gastrointestinal_system_disease "ICD10CM:K92.9")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:gastrointestinal_system_disease "MESH:D004066")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:gastrointestinal_system_disease "SNOMEDCT_US_2020_09_01:53619000")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:gastrointestinal_system_disease "UMLS_CUI:C0012242")
+AnnotationAssertion(untitled-ontology-5:has_alternative_id untitled-ontology-5:gastrointestinal_system_disease "DOID:77")
+AnnotationAssertion(untitled-ontology-5:has_alternative_id untitled-ontology-5:gastrointestinal_system_disease "DOID:944")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:gastrointestinal_system_disease "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:gastrointestinal_system_disease "DOID:27")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:gastrointestinal_system_disease "\"A disease of anatomical entity that is located_in the gastrointestinal tract.\"^^xsd:string")
+SubClassOf(untitled-ontology-5:gastrointestinal_system_disease untitled-ontology-5:disease)
+
+# Class: untitled-ontology-5:hematemesis (untitled-ontology-5:hematemesis)
+
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:hematemesis "symptom ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:hematemesis "SYMP:0019145")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:hematemesis "definition A vomiting where there is vomiting of blood")
+SubClassOf(untitled-ontology-5:hematemesis untitled-ontology-5:vomiting)
+
+# Class: untitled-ontology-5:hematochezia (untitled-ontology-5:hematochezia)
+
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:hematochezia "symptoms")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:hematochezia "SYMP:0000421")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:hematochezia "blood in stools")
+SubClassOf(untitled-ontology-5:hematochezia untitled-ontology-5:feces_and_droppings_symptom)
+
+# Class: untitled-ontology-5:hepatic_abscess (hepatic abscess)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:hepatic_abscess "SYMP:0000295")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:hepatic_abscess "symptoms")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:hepatic_abscess "liver abscess is defined as a pus-filled mass in the liver that can develop from injury to the liver or an intraabdominal infection disseminated from the portal circulation.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:hepatic_abscess "hepatic abscess")
+SubClassOf(untitled-ontology-5:hepatic_abscess untitled-ontology-5:liver_symptom)
+SubClassOf(untitled-ontology-5:hepatic_abscess ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:antibiotics))
+SubClassOf(untitled-ontology-5:hepatic_abscess ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:jejunostomy))
+SubClassOf(untitled-ontology-5:hepatic_abscess ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:percutaneous_aspiration_or_drainage))
+
+# Class: untitled-ontology-5:hepatobillary_disease (hepatobiliary_disease)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:hepatobillary_disease "MESH:D004066")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:hepatobillary_disease "UMLS_CUI:C0267792")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:hepatobillary_disease "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:hepatobillary_disease "DOID:3118")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:hepatobillary_disease "\"A gastrointestinal system disease that is located_in the liver and/or biliary tract.\"^^xsd:string")
+AnnotationAssertion(rdfs:label untitled-ontology-5:hepatobillary_disease "hepatobiliary_disease")
+SubClassOf(untitled-ontology-5:hepatobillary_disease untitled-ontology-5:gastrointestinal_system_disease)
+
+# Class: untitled-ontology-5:high_fever (high_fever)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:high_fever "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:high_fever "SYMP:0000882")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:high_fever "symptom")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:high_fever "\"High fever is a fever that involved an elevated temperature.\"^^xsd:string
+ASK STEVE: should we include more fever types from SO")
+AnnotationAssertion(rdfs:label untitled-ontology-5:high_fever "high_fever")
+SubClassOf(untitled-ontology-5:high_fever untitled-ontology-5:fever)
+
+# Class: untitled-ontology-5:interventional_radiologic_procedure (untitled-ontology-5:interventional_radiologic_procedure)
+
+SubClassOf(untitled-ontology-5:interventional_radiologic_procedure untitled-ontology-5:treatment)
+
+# Class: untitled-ontology-5:itching (pruritus)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:itching "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:itching "itching")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:itching "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:itching "SYMP:0000432")
+AnnotationAssertion(rdfs:comment untitled-ontology-5:itching "syn: itching")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:itching "\"Itching is a skin and integumentary tissue symptom characterized as an uneasy irritating sensation in the upper surface of the skin usually held to result from mild stimulation of pain receptors.\"^^xsd:string")
+AnnotationAssertion(rdfs:label untitled-ontology-5:itching "pruritus")
+SubClassOf(untitled-ontology-5:itching untitled-ontology-5:skinAndIntegumentarySystemSymptom)
+SubClassOf(untitled-ontology-5:itching ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:puritic_treatment))
+
+# Class: untitled-ontology-5:jaundice (jaundice)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:jaundice "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:jaundice "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:jaundice "SYMP:0000539")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:jaundice "\"Jaundice is a skin and integumentary tissue symptom characterized as a skin and integumentary symptom where a yellowish pigmentation of the skin, tissues, and certain body fluids is caused by the deposition of bile pigments that follows interference with normal production and discharge of bile (as in certain liver diseases) or excessive breakdown of red blood cells (as after internal hemorrhage or in various hemolytic states).\"^^xsd:string")
+AnnotationAssertion(rdfs:label untitled-ontology-5:jaundice "jaundice")
+SubClassOf(untitled-ontology-5:jaundice untitled-ontology-5:skinAndIntegumentarySystemSymptom)
+
+# Class: untitled-ontology-5:jejunostomy (resection)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:jejunostomy "cut out part of the liver")
+AnnotationAssertion(rdfs:label untitled-ontology-5:jejunostomy "resection")
+SubClassOf(untitled-ontology-5:jejunostomy untitled-ontology-5:surgical)
+
+# Class: untitled-ontology-5:liver_disesase (untitled-ontology-5:liver_disesase)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:liver_disesase "ICD10CM:K76.9")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:liver_disesase "ICD9CM:573.9")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:liver_disesase "MESH:D008107")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:liver_disesase "NCI:C3196")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:liver_disesase "SNOMEDCT_US_2020_09_01:62857009")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:liver_disesase "UMLS_CUI:C0023895")
+AnnotationAssertion(untitled-ontology-5:has_alternative_id untitled-ontology-5:liver_disesase "DOID: 2164")
+AnnotationAssertion(untitled-ontology-5:has_alternative_id untitled-ontology-5:liver_disesase "DOID: 2165")
+AnnotationAssertion(untitled-ontology-5:has_alternative_id untitled-ontology-5:liver_disesase "DOID: 46")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:liver_disesase "disease ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:liver_disesase "DOID: 409")
+SubClassOf(untitled-ontology-5:liver_disesase untitled-ontology-5:hepatobillary_disease)
+
+# Class: untitled-ontology-5:liver_symptom (untitled-ontology-5:liver_symptom)
+
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:liver_symptom "symptoms")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:liver_symptom "SYMP:0000180")
+SubClassOf(untitled-ontology-5:liver_symptom untitled-ontology-5:digestiveSystemSymptom)
+
+# Class: untitled-ontology-5:local_regional_therapy (untitled-ontology-5:local_regional_therapy)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:local_regional_therapy "used to administer chemotherapy")
+SubClassOf(untitled-ontology-5:local_regional_therapy untitled-ontology-5:interventional_radiologic_procedure)
+
+# Class: untitled-ontology-5:melena (untitled-ontology-5:melena)
+
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:melena "symptom ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:melena "SYMP: 0000323")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:melena "Melena refers to black stools that occur as a result of gastrointestinal bleeding")
+SubClassOf(untitled-ontology-5:melena untitled-ontology-5:feces_and_droppings_symptom)
+
+# Class: untitled-ontology-5:mild (untitled-ontology-5:mild)
+
+EquivalentClasses(untitled-ontology-5:mild DataSomeValuesFrom(untitled-ontology-5:hasPainScaleValue DataIntersectionOf(DatatypeRestriction(xsd:integer xsd:minInclusive "1"^^xsd:integer) DatatypeRestriction(xsd:integer xsd:maxInclusive "3"^^xsd:integer))))
+SubClassOf(untitled-ontology-5:mild untitled-ontology-5:fever_specifications)
+
+# Class: untitled-ontology-5:moderate (untitled-ontology-5:moderate)
+
+EquivalentClasses(untitled-ontology-5:moderate DataSomeValuesFrom(untitled-ontology-5:hasPainScaleValue DataIntersectionOf(DatatypeRestriction(xsd:integer xsd:minInclusive "4"^^xsd:integer) DatatypeRestriction(xsd:integer xsd:maxInclusive "6"^^xsd:integer))))
+SubClassOf(untitled-ontology-5:moderate untitled-ontology-5:fever_specifications)
+
+# Class: untitled-ontology-5:nausea (nausea)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:nausea "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:nausea "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:nausea "SYMP:0000458")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:nausea "\"Nausea is a digestive system symptom characterized by an uneasy or unsettled feeling in the stomach together with an urge to vomit.\"^^xsd:string")
+AnnotationAssertion(rdfs:label untitled-ontology-5:nausea "nausea")
+SubClassOf(untitled-ontology-5:nausea untitled-ontology-5:digestiveSystemSymptom)
+SubClassOf(untitled-ontology-5:nausea ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:antiemetic))
+
+# Class: untitled-ontology-5:nervousSystemSymptom (nervous_system_symptom)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:nervousSystemSymptom "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:nervousSystemSymptom "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:nervousSystemSymptom "SYMP:0000480")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:nervousSystemSymptom "symptoms in the the network of nerve cells and fibers which transmits nerve impulses between parts of the body.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:nervousSystemSymptom "nervous_system_symptom")
+SubClassOf(untitled-ontology-5:nervousSystemSymptom untitled-ontology-5:symptomsOfCarolisDisease)
+
+# Class: untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom (neurological_and_physiological _system_symptom)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom "SYMP:0000410")
+AnnotationAssertion(rdfs:label untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom "neurological_and_physiological _system_symptom")
+SubClassOf(untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom untitled-ontology-5:symptomsOfCarolisDisease)
+
+# Class: untitled-ontology-5:non_recurrent_symptom_status (untitled-ontology-5:non_recurrent_symptom_status)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:non_recurrent_symptom_status "")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:non_recurrent_symptom_status "is a symptom status if symptom occuring only once")
+EquivalentClasses(untitled-ontology-5:non_recurrent_symptom_status ObjectIntersectionOf(untitled-ontology-5:recurrency_value DataSomeValuesFrom(untitled-ontology-5:hasRecurrentValue DatatypeRestriction(xsd:integer xsd:maxInclusive "1"^^xsd:integer))))
+
+# Class: untitled-ontology-5:none (untitled-ontology-5:none)
+
+EquivalentClasses(untitled-ontology-5:none DataSomeValuesFrom(untitled-ontology-5:hasPainScaleValue DatatypeRestriction(xsd:integer xsd:maxInclusive "0"^^xsd:integer)))
+SubClassOf(untitled-ontology-5:none untitled-ontology-5:fever_specifications)
+
+# Class: untitled-ontology-5:octreotide (untitled-ontology-5:octreotide)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:octreotide "In patients with suspected variceal bleeding, octreotide is given as an intravenous bolus")
+SubClassOf(untitled-ontology-5:octreotide untitled-ontology-5:pharmaceutical_treatments)
+
+# Class: untitled-ontology-5:pain (pain)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:pain "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:pain "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:pain "SYMP:000099")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:pain "\"A sensation perception where there is an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body.\"^^xsd:string
+
+ASK STEVE- Sami\"shouldnt this pain be connected with the pain scale, and also should we include more pain types from the SO\"")
+AnnotationAssertion(rdfs:label untitled-ontology-5:pain "pain")
+SubClassOf(untitled-ontology-5:pain untitled-ontology-5:sensation_perception)
+SubClassOf(untitled-ontology-5:pain ObjectSomeValuesFrom(untitled-ontology-5:has_painscale untitled-ontology-5:fever_specifications))
+SubClassOf(untitled-ontology-5:pain DataSomeValuesFrom(untitled-ontology-5:hasPainScaleValue xsd:integer))
+
+# Class: untitled-ontology-5:paracentesis (untitled-ontology-5:paracentesis)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:paracentesis "Paracentesis is a procedure that removes fluid (peritoneal fluid) from the abdomen through a slender needle.")
+SubClassOf(untitled-ontology-5:paracentesis untitled-ontology-5:interventional_radiologic_procedure)
+
+# Class: untitled-ontology-5:percutaneous_aspiration_or_drainage (percutaneous_aspiration_and_drainage)
+
+AnnotationAssertion(rdfs:label untitled-ontology-5:percutaneous_aspiration_or_drainage "percutaneous_aspiration_and_drainage")
+SubClassOf(untitled-ontology-5:percutaneous_aspiration_or_drainage untitled-ontology-5:interventional_radiologic_procedure)
+
+# Class: untitled-ontology-5:percutaneous_transhepatic_cholangeography (percutaneous_transhepatic_cholangiography)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:percutaneous_transhepatic_cholangeography "uses a tube to drain the obstructed bile duck")
+AnnotationAssertion(rdfs:label untitled-ontology-5:percutaneous_transhepatic_cholangeography "percutaneous_transhepatic_cholangiography")
+SubClassOf(untitled-ontology-5:percutaneous_transhepatic_cholangeography untitled-ontology-5:interventional_radiologic_procedure)
+
+# Class: untitled-ontology-5:pharmaceutical_treatments (pharmaceutical_treatment)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:pharmaceutical_treatments "Pharmaceutical therapy, also commonly referred to at pharmacotherapy or pharmacological therapy, refers to the treatment of disease through the application of medications (drugs).")
+AnnotationAssertion(rdfs:label untitled-ontology-5:pharmaceutical_treatments "pharmaceutical_treatment")
+SubClassOf(untitled-ontology-5:pharmaceutical_treatments untitled-ontology-5:treatment)
+
+# Class: untitled-ontology-5:portal_hypertension (portal hypertension)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:portal_hypertension "GARD:8229")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:portal_hypertension "ICD10CM:K76.6")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:portal_hypertension "ICD9CM:572.3")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:portal_hypertension "MESH:D006975")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:portal_hypertension "NCI:C3119")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:portal_hypertension "NOMEDCT_US_2020_09_01:155821005")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:portal_hypertension "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:portal_hypertension "DOID:10762")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:portal_hypertension "Portal hypertension is abnormally increased portal venous pressure – blood pressure in the portal vein and its branches, that drain from most of the intestine to the liver.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:portal_hypertension "portal hypertension")
+SubClassOf(untitled-ontology-5:portal_hypertension untitled-ontology-5:liver_disesase)
+SubClassOf(untitled-ontology-5:portal_hypertension ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:ascites))
+SubClassOf(untitled-ontology-5:portal_hypertension ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt))
+SubClassOf(untitled-ontology-5:portal_hypertension ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transplant))
+
+# Class: untitled-ontology-5:proton_pump_inhibitor (untitled-ontology-5:proton_pump_inhibitor)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:proton_pump_inhibitor "also known as PPIs, are medicines that work by reducing the amount of stomach acid made by glands in the lining of your stomach.")
+SubClassOf(untitled-ontology-5:proton_pump_inhibitor untitled-ontology-5:pharmaceutical_treatments)
+
+# Class: untitled-ontology-5:puritic_treatment (pruritus_treatment)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:puritic_treatment "Pruritus treatment topical, oral, or other treatments (e.g., light therapy)  for systemic itching")
+AnnotationAssertion(rdfs:label untitled-ontology-5:puritic_treatment "pruritus_treatment")
+SubClassOf(untitled-ontology-5:puritic_treatment untitled-ontology-5:pharmaceutical_treatments)
+
+# Class: untitled-ontology-5:radiation_therapy (untitled-ontology-5:radiation_therapy)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:radiation_therapy "radiation is administered to treat cancer")
+SubClassOf(untitled-ontology-5:radiation_therapy untitled-ontology-5:treatment)
+
+# Class: untitled-ontology-5:recurrency_value (symptom_status)
+
+AnnotationAssertion(rdfs:label untitled-ontology-5:recurrency_value "symptom_status")
+SubClassOf(untitled-ontology-5:recurrency_value owl:Thing)
+SubClassOf(untitled-ontology-5:recurrency_value DataSomeValuesFrom(untitled-ontology-5:hasRecurrentValue xsd:integer))
+
+# Class: untitled-ontology-5:recurrent (recurrent_symptom_status)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:recurrent "is a symptom status if symptom occuring more than once")
+AnnotationAssertion(rdfs:label untitled-ontology-5:recurrent "recurrent_symptom_status")
+EquivalentClasses(untitled-ontology-5:recurrent ObjectIntersectionOf(untitled-ontology-5:recurrency_value DataSomeValuesFrom(untitled-ontology-5:hasRecurrentValue DatatypeRestriction(xsd:integer xsd:minInclusive "2"^^xsd:integer))))
+
+# Class: untitled-ontology-5:remove_gall_stone (dilate_bile_duct)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:remove_gall_stone "The drainage tube is placed through the skin into one of the bile ducts in the liver to allow bile out")
+AnnotationAssertion(rdfs:label untitled-ontology-5:remove_gall_stone "dilate_bile_duct")
+SubClassOf(untitled-ontology-5:remove_gall_stone untitled-ontology-5:drain_bile_duct)
+
+# Class: untitled-ontology-5:roux_en_y (untitled-ontology-5:roux_en_y)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:roux_en_y "a treatment that involves creating a small pouch from the stomach and connecting the newly created pouch directly to the small intestine.")
+SubClassOf(untitled-ontology-5:roux_en_y untitled-ontology-5:surgical)
+
+# Class: untitled-ontology-5:sensation_perception (sensation_perception)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:sensation_perception "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:sensation_perception "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:sensation_perception "SYMP:0000892")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:sensation_perception "\"Sensation perception is a nervous system symptom where the information perceived by sensory receptors are interpreted.\"^^xsd:string")
+AnnotationAssertion(rdfs:label untitled-ontology-5:sensation_perception "sensation_perception")
+SubClassOf(untitled-ontology-5:sensation_perception untitled-ontology-5:nervousSystemSymptom)
+
+# Class: untitled-ontology-5:sepsis (bacterial sepsis)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:sepsis "ICD9CM:995.91")
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:sepsis "SNOMEDCT_US_2020_03_01:10001005")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:sepsis "disease_ontology")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:sepsis "DOID:0040085")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:sepsis "A bacterial infectious disease has_material_basis_in Bacteria")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:sepsis "a serious condition resulting from the presence of harmful microorganisms in the blood or other tissues and the body’s response to their presence, potentially leading to the malfunctioning of various organs, shock, and death.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:sepsis "bacterial sepsis")
+SubClassOf(untitled-ontology-5:sepsis untitled-ontology-5:bacterial_disease)
+
+# Class: untitled-ontology-5:severe (untitled-ontology-5:severe)
+
+EquivalentClasses(untitled-ontology-5:severe DataSomeValuesFrom(untitled-ontology-5:hasPainScaleValue DataIntersectionOf(DatatypeRestriction(xsd:integer xsd:minInclusive "7"^^xsd:integer) DatatypeRestriction(xsd:integer xsd:maxInclusive "10"^^xsd:integer))))
+SubClassOf(untitled-ontology-5:severe untitled-ontology-5:fever_specifications)
+
+# Class: untitled-ontology-5:skinAndIntegumentarySystemSymptom (skin_and_integumentary_tissue_system_symptom)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:skinAndIntegumentarySystemSymptom "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:skinAndIntegumentarySystemSymptom "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:skinAndIntegumentarySystemSymptom "SYMP:0000488")
+AnnotationAssertion(rdfs:label untitled-ontology-5:skinAndIntegumentarySystemSymptom "skin_and_integumentary_tissue_system_symptom")
+SubClassOf(untitled-ontology-5:skinAndIntegumentarySystemSymptom untitled-ontology-5:symptomsOfCarolisDisease)
+
+# Class: untitled-ontology-5:stent_placement (untitled-ontology-5:stent_placement)
+
+SubClassOf(untitled-ontology-5:stent_placement untitled-ontology-5:drain_bile_duct)
+
+# Class: untitled-ontology-5:surgical (surgical_treatment)
+
+AnnotationAssertion(rdfs:label untitled-ontology-5:surgical "surgical_treatment")
+SubClassOf(untitled-ontology-5:surgical untitled-ontology-5:treatment)
+
+# Class: untitled-ontology-5:symptomsOfCarolisDisease (symptoms)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:symptomsOfCarolisDisease "the experiential state of caroli disease")
+AnnotationAssertion(rdfs:label untitled-ontology-5:symptomsOfCarolisDisease "symptoms")
+SubClassOf(untitled-ontology-5:symptomsOfCarolisDisease owl:Thing)
+SubClassOf(untitled-ontology-5:symptomsOfCarolisDisease DataSomeValuesFrom(untitled-ontology-5:hasRecurrentValue xsd:integer))
+
+# Class: untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt (transjugular_intrahepatic_portosystemic_shunt)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt "Transjugular Intrahepatic Portosystemic Shunt or TIPS is a procedure that uses imaging guidance to connect the portal vein to the hepatic vein in the liver.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt "transjugular_intrahepatic_portosystemic_shunt")
+SubClassOf(untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt untitled-ontology-5:interventional_radiologic_procedure)
+
+# Class: untitled-ontology-5:transplant (untitled-ontology-5:transplant)
+
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:transplant "Organ transplantation is a medical procedure in which an organ is removed from one body and placed in the body of a recipient, to replace a damaged or missing organ.")
+SubClassOf(untitled-ontology-5:transplant untitled-ontology-5:surgical)
+
+# Class: untitled-ontology-5:treatment (untitled-ontology-5:treatment)
+
+SubClassOf(untitled-ontology-5:treatment owl:Thing)
+
+# Class: untitled-ontology-5:upper_right_quadrant_tenderness (upper_right_quadrant_tenderness)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:upper_right_quadrant_tenderness "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:upper_right_quadrant_tenderness "symptoms")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:upper_right_quadrant_tenderness "SYMP:0000499")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:upper_right_quadrant_tenderness "when pressure on the upper right part of your stomach causes pain. the upper right quadrant ontains many important organs, including parts of your liver, right kidney, gallbladder, pancreas, and large and small intestine.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:upper_right_quadrant_tenderness "upper_right_quadrant_tenderness")
+SubClassOf(untitled-ontology-5:upper_right_quadrant_tenderness untitled-ontology-5:abdominal_tenderness)
+
+# Class: untitled-ontology-5:visceral_pain (visceral_pain)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:visceral_pain "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:visceral_pain "SYMP:0000892")
+AnnotationAssertion(rdfs:comment untitled-ontology-5:visceral_pain "syn: pain in the truck area of the body, abdominal pain")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:visceral_pain "\"Visceral pain is a pain originated from organ tissues of the thorax, abdomen, or pelvis, It characterizes as deep, vague, difficult to locate pain that radiates away from the affected organ.\"^^xsd:string")
+AnnotationAssertion(rdfs:label untitled-ontology-5:visceral_pain "visceral_pain")
+SubClassOf(untitled-ontology-5:visceral_pain untitled-ontology-5:pain)
+
+# Class: untitled-ontology-5:vomiting (vomiting)
+
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:vomiting "DIOD:0050876")
+AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:vomiting "symptom")
+AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:vomiting "SYMP:0019145")
+AnnotationAssertion(rdfs:comment untitled-ontology-5:vomiting "syn: throwing up")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:vomiting "Vomiting, or throwing up, is a forceful discharge of stomach contents.")
+AnnotationAssertion(rdfs:label untitled-ontology-5:vomiting "vomiting")
+SubClassOf(untitled-ontology-5:vomiting untitled-ontology-5:digestiveSystemSymptom)
+
+# Class: untitled-ontology-5:widen_bile_duct (remove_gall_stone)
+
+AnnotationAssertion(rdfs:label untitled-ontology-5:widen_bile_duct "remove_gall_stone")
+SubClassOf(untitled-ontology-5:widen_bile_duct untitled-ontology-5:drain_bile_duct)
+
+# Class: <http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> (variceal_bleeding)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> "bleeding of varices found throughout the gastrointestinal tract, such as in the esophagus, stomach, and rectum")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> "variceal_bleeding")
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> untitled-ontology-5:gastrointestinal_bleeding)
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:hematemesis))
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:hematochezia))
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:melena))
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:antibiotics))
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:endoscopic_band_ligation))
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:octreotide))
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:proton_pump_inhibitor))
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt))
+
+
+DisjointClasses(untitled-ontology-5:adominalSymptom untitled-ontology-5:digestiveSystemSymptom untitled-ontology-5:nervousSystemSymptom untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom untitled-ontology-5:skinAndIntegumentarySystemSymptom)
+DisjointClasses(untitled-ontology-5:endoscopic_treatment untitled-ontology-5:interventional_radiologic_procedure untitled-ontology-5:pharmaceutical_treatments untitled-ontology-5:radiation_therapy untitled-ontology-5:surgical)
+DisjointClasses(untitled-ontology-5:mild untitled-ontology-5:moderate untitled-ontology-5:none untitled-ontology-5:severe)
+)

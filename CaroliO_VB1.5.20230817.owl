@@ -1,0 +1,1026 @@
+Prefix(:=<http://purl.obolibrary.org/obo/carolio.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(Link:=<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(untitled-ontology-5:=<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/carolio.owl>
+<http://purl.obolibrary.org/obo/carolio.owl/VB1.3>
+Annotation(:Contributed_by "M. Samie Tootooni <mtootooni@luc.edu>
+Julie Slezak
+Steve J. Scaglione"^^xsd:string)
+Annotation(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "carolio"^^xsd:string)
+Annotation(rdfs:comment "CaroliO is an Ontology desined for describing the symptoms, treatment, and outcomes of Caroli's disease. This ontology uses relation ontology (RO), symptom ontology (SO) and Disease Ontology (DO) as upper level ontology.")
+Annotation(rdfs:label "Caroli ontology - basic version"^^xsd:string)
+Annotation(owl:versionInfo "VB1.3"^^xsd:string)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_0040085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_0050876>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_0060262>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_10211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_3118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4138>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4606>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4897>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4947>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_77>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_9741>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4#disease>))
+Declaration(Class(:ValuePartition))
+Declaration(Class(:abdominal_tenderness))
+Declaration(Class(:acute_pain))
+Declaration(Class(:adominalSymptom))
+Declaration(Class(:altered_mental_status))
+Declaration(Class(:antibiotics))
+Declaration(Class(:antiemetic))
+Declaration(Class(:ascites))
+Declaration(Class(:bile_acid))
+Declaration(Class(:caroli_syndrome))
+Declaration(Class(:chemotherapy))
+Declaration(Class(:cholangitis))
+Declaration(Class(:choledochal_cyst))
+Declaration(Class(:digestiveSystemSymptom))
+Declaration(Class(:diuretics))
+Declaration(Class(:drain_bile_duct))
+Declaration(Class(:dyspepsia))
+Declaration(Class(:endoscopic_band_ligation))
+Declaration(Class(:endoscopic_retrograde_cholangiopancreatography))
+Declaration(Class(:endoscopic_treatment))
+Declaration(Class(:feces_and_droppings_symptom))
+Declaration(Class(:fever))
+Declaration(Class(:fever_specifications))
+Declaration(Class(:gastrointestinal_bleeding))
+Declaration(Class(:hematemesis))
+Declaration(Class(:hematochezia))
+Declaration(Class(:hepatic_abscess))
+Declaration(Class(:high_fever))
+Declaration(Class(:interventional_radiologic_procedure))
+Declaration(Class(:itching))
+Declaration(Class(:jaundice))
+Declaration(Class(:jejunostomy))
+Declaration(Class(:liver_disesase))
+Declaration(Class(:liver_symptom))
+Declaration(Class(:local_regional_therapy))
+Declaration(Class(:melena))
+Declaration(Class(:mild))
+Declaration(Class(:moderate))
+Declaration(Class(:nausea))
+Declaration(Class(:nervousSystemSymptom))
+Declaration(Class(:neurologicalAndPhysiologicalSystemSymptom))
+Declaration(Class(:non_recurrent_symptom_status))
+Declaration(Class(:none))
+Declaration(Class(:octreotide))
+Declaration(Class(:pain))
+Declaration(Class(:paracentesis))
+Declaration(Class(:percutaneous_aspiration_or_drainage))
+Declaration(Class(:percutaneous_transhepatic_cholangeography))
+Declaration(Class(:pharmaceutical_treatments))
+Declaration(Class(:portal_hypertension))
+Declaration(Class(:proton_pump_inhibitor))
+Declaration(Class(:puritic_treatment))
+Declaration(Class(:radiation_therapy))
+Declaration(Class(:recurrency_value))
+Declaration(Class(:recurrent))
+Declaration(Class(:remove_gall_stone))
+Declaration(Class(:roux_en_y))
+Declaration(Class(:sensation_perception))
+Declaration(Class(:severe))
+Declaration(Class(:skinAndIntegumentarySystemSymptom))
+Declaration(Class(:stent_placement))
+Declaration(Class(:surgical))
+Declaration(Class(:symptomsOfCarolisDisease))
+Declaration(Class(:transjugular_intrahepatic_portosystemic_shunt))
+Declaration(Class(:transplant))
+Declaration(Class(:treatment))
+Declaration(Class(:upper_right_quadrant_tenderness))
+Declaration(Class(:visceral_pain))
+Declaration(Class(:vomiting))
+Declaration(Class(:widen_bile_duct))
+Declaration(Class(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002201>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0004019>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0004022>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0016001>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002200#has_phenotype>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SCDO_1000018#treats>))
+Declaration(ObjectProperty(:hasOutome))
+Declaration(ObjectProperty(:has_painscale))
+Declaration(ObjectProperty(:has_sign))
+Declaration(ObjectProperty(:has_symptom))
+Declaration(ObjectProperty(:has_treatment))
+Declaration(ObjectProperty(:is_painscale_of))
+Declaration(ObjectProperty(:is_sign_of))
+Declaration(ObjectProperty(:is_symptom_of))
+Declaration(DataProperty(:hasPainScaleValue))
+Declaration(DataProperty(:hasRecurrentValue))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(:Contributed_by))
+Declaration(AnnotationProperty(:syn))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(rdfs:label))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (Definition)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> "Information Artifact Ontology")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> <Definition>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (definition source)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000119> "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> "Information Artifact Ontology")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "definition source")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> (has alternative id)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> "has alternative id")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> "has_alternative_id")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "A property representing a reference to an identical or very similar object in another database.")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "database cross reference")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "database_cross_reference")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> (has_obo_namespace)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "has_obo_namespace")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (has_related_synonym)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "has_related_synonym")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#id> (id)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#id> "id")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002201> (phenotype of)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0002201> "RO:0002201")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002201> "phenotype of")
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002201> <http://purl.obolibrary.org/obo/RO_0002200#has_phenotype>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0004019> (disease has basis in)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0004019> "RO:0004019")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0004019> "disease has basis in")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0004022> (disease has basis in feature)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0004022> "RO:0004022")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0004022> "disease has basis in feature")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0004022> <http://purl.obolibrary.org/obo/RO_0004019>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0004022> :hasOutome)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0004022>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0016001> (has phenotype or disease)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0016001> "RO:0016001")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0016001> "has phenotype or disease")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002200#has_phenotype> (has phenotype)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002200#has_phenotype> "A relationship that holds between a biological entity and a phenotype. Here a phenotype is construed broadly as any kind of quality of an organism part, a collection of these qualities, or a change in quality or qualities (e.g. abnormally increased temperature). The subject of this relationship can be an organism (where the organism has the phenotype, i.e. the qualities inhere in parts of this organism), a genomic entity such as a gene or genotype (if modifications of the gene or the genotype causes the phenotype), or a condition such as a disease (such that if the condition inheres in an organism, then the organism has the phenotype).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002200#has_phenotype> "has phenotype")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002200#has_phenotype> <http://purl.obolibrary.org/obo/RO_0016001>)
+
+# Object Property: <http://purl.obolibrary.org/obo/SCDO_1000018#treats> (<http://purl.obolibrary.org/obo/SCDO_1000018#treats>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SCDO_1000018#treats> "A relation between a type of treatment or a specific treatment and a condition (phenotype or disease), where the type of treatment or specific treatment treat the condition.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/SCDO_1000018#treats> "SCDO:1000018")
+InverseObjectProperties(<http://purl.obolibrary.org/obo/SCDO_1000018#treats> :has_treatment)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/SCDO_1000018#treats> :treatment)
+
+# Object Property: :hasOutome (has_outcome)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :hasOutome "outcome can be either pre diagnosis or post
+also can be called a consequence")
+AnnotationAssertion(rdfs:label :hasOutome "has_outcome")
+TransitiveObjectProperty(:hasOutome)
+
+# Object Property: :has_painscale (:has_painscale)
+
+InverseObjectProperties(:has_painscale :is_painscale_of)
+FunctionalObjectProperty(:has_painscale)
+
+# Object Property: :has_sign (:has_sign)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_sign "having objective findings observed or measured by a healthcare professional.")
+SubObjectPropertyOf(:has_sign <http://purl.obolibrary.org/obo/RO_0002200#has_phenotype>)
+InverseObjectProperties(:has_sign :is_sign_of)
+TransitiveObjectProperty(:has_sign)
+ReflexiveObjectProperty(:has_sign)
+
+# Object Property: :has_symptom (:has_symptom)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :has_symptom "having subjective experiences reported by the patient")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> :has_symptom <http://purl.obolibrary.org/obo/RO_0002452>)
+SubObjectPropertyOf(:has_symptom <http://purl.obolibrary.org/obo/RO_0002200#has_phenotype>)
+InverseObjectProperties(:has_symptom :is_symptom_of)
+TransitiveObjectProperty(:has_symptom)
+
+# Object Property: :has_treatment (:has_treatment)
+
+ObjectPropertyRange(:has_treatment :treatment)
+
+# Object Property: :is_painscale_of (:is_painscale_of)
+
+ObjectPropertyDomain(:is_painscale_of :fever_specifications)
+
+# Object Property: :is_sign_of (:is_sign_of)
+
+SubObjectPropertyOf(:is_sign_of <http://purl.obolibrary.org/obo/RO_0002201>)
+TransitiveObjectProperty(:is_sign_of)
+ReflexiveObjectProperty(:is_sign_of)
+
+# Object Property: :is_symptom_of (:is_symptom_of)
+
+SubObjectPropertyOf(:is_symptom_of <http://purl.obolibrary.org/obo/RO_0002201>)
+TransitiveObjectProperty(:is_symptom_of)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasPainScaleValue (:hasPainScaleValue)
+
+FunctionalDataProperty(:hasPainScaleValue)
+
+# Data Property: :hasRecurrentValue (:hasRecurrentValue)
+
+SubDataPropertyOf(:hasRecurrentValue owl:topDataProperty)
+FunctionalDataProperty(:hasRecurrentValue)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/DOID_0040085> (bacterial sepsis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_0040085> "A bacterial infectious disease has_material_basis_in Bacteria")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_0040085> "Human Disease Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0040085> "DOID:0040085")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0040085> "ICD9CM:995.91")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0040085> "SNOMEDCT_US_2020_03_01:10001005")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_0040085> "DOID:0040085")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DOID_0040085> "A serious condition resulting from the presence of harmful microorganisms in the blood or other tissues and the body’s response to their presence, potentially leading to the malfunctioning of various organs, shock, and death.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_0040085> "bacterial sepsis")
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0040085> <http://purl.obolibrary.org/obo/DOID_104>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_0050876> (Caroli disease)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_0050876> "A bile duct disease that is characterized by abnormal dilatation of the intrahepatic bile ducts.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0050876> "MESH:D016767")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0050876> "SNOMEDCT_US_2020_09_01:717232005")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0050876> "UMLS_CUI:C0162510")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/DOID_0050876> "disease_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_0050876> "DOID:0050876")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_0050876> "Caroli disease")
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050876> <http://purl.obolibrary.org/obo/DOID_4138>)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050876> ObjectSomeValuesFrom(:hasOutome <http://purl.obolibrary.org/obo/DOID_10211>))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050876> ObjectSomeValuesFrom(:hasOutome :cholangitis))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050876> ObjectSomeValuesFrom(:hasOutome :choledochal_cyst))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050876> ObjectSomeValuesFrom(:has_sign :upper_right_quadrant_tenderness))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050876> ObjectSomeValuesFrom(:has_symptom :dyspepsia))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050876> ObjectSomeValuesFrom(:has_symptom :fever))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050876> ObjectSomeValuesFrom(:has_symptom :hepatic_abscess))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050876> ObjectSomeValuesFrom(:has_symptom :itching))
+
+# Class: <http://purl.obolibrary.org/obo/DOID_0060262> (gallbladder disease)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_0060262> "A gastrointestinal system disease that is located_in the gallbladder")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_0060262> "Human Disease Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0060262> "ICD10CM:K82.9")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0060262> "ICD9CM:575.9")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0060262> "MESH:D005705")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0060262> "NCI:C34631")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_0060262> "SNOMEDCT_US_2020_09_01:155807008")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_0060262> "DOID:0060262")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_0060262> "gallbladder disease"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0060262> <http://purl.obolibrary.org/obo/DOID_77>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_10211> (cholelithiasis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_10211> "The presence of calculi in the gallbladder.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_10211> "Human Disaease Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_10211> "ICD9CM:574.5")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_10211> "MONDO:12672")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_10211> "SNOMEDCT_US_2020_09_01:197397004")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_10211> "UMLS_CUI:C0006739")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_10211> "DOID:10211")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_10211> "cholelithiasis")
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_10211> <http://purl.obolibrary.org/obo/DOID_0060262>)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_10211> ObjectSomeValuesFrom(:hasOutome :cholangitis))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_10211> ObjectSomeValuesFrom(:has_sign :upper_right_quadrant_tenderness))
+
+# Class: <http://purl.obolibrary.org/obo/DOID_104> (bacterial infectious disease)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_104> "A disease by infectious agent that results_in infection, has_material_basis_in Bacteria.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_104> "Human Disease Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_104> "ICD10CM:A49.9")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_104> "MESH:D001424")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_104> "NCI:C2890")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_104> "SNOMEDCT_US_2020_09_01:87628006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_104> "UMLS_CUI:C0004623")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_104> "DOID:104")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_104> "bacterial infectious disease")
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_104> <http://purl.obolibrary.org/obo/DOID_4#disease>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_3118> (hepatobiliary disease)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_3118> "A gastrointestinal system disease that is located_in the liver and/or biliary tract.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_3118> "Human Disaease Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_3118> "MESH:D004066")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_3118> "UMLS_CUI:C0267792")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/DOID_3118> "disease_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_3118> "DOID:3118")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_3118> "hepatobiliary disease"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_3118> <http://purl.obolibrary.org/obo/DOID_77>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_4138> (bile duct disease)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_4138> "disease of the bile ducts")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_4138> "Human Disaease Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4138> "DOID:4138")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4138> "MESH:D001649")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4138> "SNOMEDCT_US_2020_09_01:118926004")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4138> "UMLS_CUI:C0005395")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/DOID_4138> "disease_ontology")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_4138> "bile duct disease"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4138> <http://purl.obolibrary.org/obo/DOID_9741>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_4606> (bile duct cancer)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_4606> "A biliary tract cancer that is located_in the bile duct.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/DOID_4606> "DOID:10019")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4606> "ICD10CM:C24.0")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4606> "MESH:D001650")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4606> "NCI:C2898")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4606> "NCI:C7483")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4606> "SNOMEDCT_US_2020_09_01:93790004")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4606> "UMLS_CUI:C0005396")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4606> "UMLS_CUI:C0153453")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_4606> "DOID: 4606")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_4606> "bile duct cancer")
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4606> <http://purl.obolibrary.org/obo/DOID_4138>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_4897> (bile duct carcinoma)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_4897> "A bile duct cancer that has_material_basis_in abnormally proliferating cells derives_from epithelial cells."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4897> "NCI:C27814")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4897> "SNOMEDCT_US_2021_09_01:70179006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4897> "UMLS_CUI:C0740277")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_4897> "DOID:4897"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_4897> "bile duct carcinoma"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4897> <http://purl.obolibrary.org/obo/DOID_4606>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_4947> (cholangiocarcinoma)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_4947> "definition \"A bile duct adenocarcinoma that has_material_basis_in bile duct epithelial cells.\"^^xsd:string")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/DOID_4947> "DOID:5249")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4947> "ICD10CM:C22.1")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4947> "MESH:D018281")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4947> "NCI:C4436")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4947> "NCI:C8265")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4947> "SNOMEDCT_US_2020_09_01:70179006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4947> "UMLS_CUI:C0206698")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4947> "UMLS_CUI:C0280725")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/DOID_4947> "disease_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_4947> "DOID:4947")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_4947> "cholangiocarcinoma")
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4947> <http://purl.obolibrary.org/obo/DOID_4606>)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4947> ObjectSomeValuesFrom(:has_treatment :chemotherapy))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4947> ObjectSomeValuesFrom(:has_treatment :jejunostomy))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4947> ObjectSomeValuesFrom(:has_treatment :local_regional_therapy))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4947> ObjectSomeValuesFrom(:has_treatment :radiation_therapy))
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4947> ObjectSomeValuesFrom(:has_treatment :transplant))
+
+# Class: <http://purl.obolibrary.org/obo/DOID_77> (gastrointestinal system disease)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_77> "A disease of anatomical entity that is located_in the gastrointestinal tract.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_77> "Human Disaease Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/DOID_77> "DOID:77")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/DOID_77> "DOID:944")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_77> "ICD10CM:K92.9")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_77> "MESH:D004066")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_77> "SNOMEDCT_US_2020_09_01:53619000")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_77> "UMLS_CUI:C0012242")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/DOID_77> "disease_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_77> "DOID:27")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_77> "gastrointestinal system disease"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_77> <http://purl.obolibrary.org/obo/DOID_4#disease>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_9741> (biliary tract disease)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_9741> "disease of the billary tract")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_9741> "Human Disaease Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_9741> "ICD10CM:K83.9")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_9741> "MESH:D001660")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_9741> "SNOMEDCT_US_2020_09_01:5235004")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_9741> "UMLS_CUI:C0005424")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/DOID_9741> "DOID:9741")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_9741> "biliary tract disease"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_9741> <http://purl.obolibrary.org/obo/DOID_3118>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_4#disease> (disease)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DOID_4#disease> "A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DOID_4#disease> "Human Disease Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4#disease> "DOID:4")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4#disease> "MONDO:0700096")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/DOID_4#disease> "OGMS:0000031")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_4#disease> "disease")
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4#disease> owl:Thing)
+
+# Class: :abdominal_tenderness (abdominal_tenderness)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :abdominal_tenderness "when pressure on your stomach causes pain")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :abdominal_tenderness "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :abdominal_tenderness "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :abdominal_tenderness "SYMP:0000484")
+AnnotationAssertion(rdfs:label :abdominal_tenderness "abdominal_tenderness")
+SubClassOf(:abdominal_tenderness :adominalSymptom)
+SubClassOf(:abdominal_tenderness ObjectSomeValuesFrom(:has_painscale :fever_specifications))
+
+# Class: :acute_pain (acute_pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :acute_pain "\"Acute pain is a pain that is severe but lasts a relatively short time.\"^^xsd:string")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :acute_pain "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :acute_pain "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :acute_pain "SYMP:0000839")
+AnnotationAssertion(rdfs:comment :acute_pain "pain of short duration, lt= 3month")
+AnnotationAssertion(rdfs:label :acute_pain "acute_pain")
+SubClassOf(:acute_pain :pain)
+
+# Class: :adominalSymptom (abdominal_symptom)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> :adominalSymptom "symptoms in the stomach")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :adominalSymptom "Symptom Ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :adominalSymptom "DIOD:005076")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :adominalSymptom "SYMP:0000461")
+AnnotationAssertion(rdfs:label :adominalSymptom "abdominal_symptom")
+SubClassOf(:adominalSymptom :symptomsOfCarolisDisease)
+
+# Class: :altered_mental_status (:altered_mental_status)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :altered_mental_status "This condition causes changes in consciousness and symptoms that can affect many organ systems. Many causes are treatable and don’t affect long-term well-being.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :altered_mental_status "symptoms")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :altered_mental_status "id SYMP:0000682")
+SubClassOf(:altered_mental_status :neurologicalAndPhysiologicalSystemSymptom)
+
+# Class: :antibiotics (antibiotic)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :antibiotics "treatment with oral or intervenous agents to erradicate bacterial infections")
+AnnotationAssertion(rdfs:label :antibiotics "antibiotic")
+SubClassOf(:antibiotics :pharmaceutical_treatments)
+
+# Class: :antiemetic (:antiemetic)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :antiemetic "An antiemetic is a drug that is effective against vomiting and nausea. Antiemetics are typically used to treat motion sickness and the side effects of opioid analgesics, general anaesthetics, and chemotherapy directed against cancer")
+SubClassOf(:antiemetic :pharmaceutical_treatments)
+
+# Class: :ascites (:ascites)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :ascites "An abdominal symptom consisting of an abnormal accumulation of serous fluid in the spaces between tissues and organs in the cavity of the abdomen.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :ascites "ICD9CM_2005:789.5")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :ascites "synptoms")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> :ascites "hydroperitoneum")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :ascites "SYMP: 0000526")
+AnnotationAssertion(rdfs:comment :ascites "")
+SubClassOf(:ascites :adominalSymptom)
+SubClassOf(:ascites ObjectSomeValuesFrom(:has_treatment :diuretics))
+SubClassOf(:ascites ObjectSomeValuesFrom(:has_treatment :paracentesis))
+SubClassOf(:ascites ObjectSomeValuesFrom(:has_treatment :transjugular_intrahepatic_portosystemic_shunt))
+
+# Class: :bile_acid (bile_acid)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :bile_acid "oral treatment to improve viscosity of bile")
+AnnotationAssertion(rdfs:label :bile_acid "bile_acid")
+SubClassOf(:bile_acid :pharmaceutical_treatments)
+
+# Class: :caroli_syndrome (:caroli_syndrome)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :caroli_syndrome "A bile duct disease characterized by multiple segmental cystic or saccular dilatations of intrahepatic bile ducts associated with congenital hepatic fibrosis.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :caroli_syndrome "MONDO:0018808")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :caroli_syndrome "Orphanet:480520")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :caroli_syndrome "UMLS:CN776859")
+SubClassOf(:caroli_syndrome <http://purl.obolibrary.org/obo/DOID_4138>)
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:hasOutome <http://purl.obolibrary.org/obo/DOID_10211>))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:hasOutome <http://purl.obolibrary.org/obo/DOID_4947>))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:hasOutome :cholangitis))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:hasOutome :choledochal_cyst))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:hasOutome :portal_hypertension))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_sign :upper_right_quadrant_tenderness))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_symptom :ascites))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_symptom :dyspepsia))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_symptom :fever))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_symptom :hepatic_abscess))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_symptom :itching))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_symptom <http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding>))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_treatment :bile_acid))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_treatment :jejunostomy))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_treatment :puritic_treatment))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_treatment :roux_en_y))
+SubClassOf(:caroli_syndrome ObjectSomeValuesFrom(:has_treatment :transplant))
+
+# Class: :chemotherapy (:chemotherapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :chemotherapy "A pharmaceutical treatment that uses powerful chemicals to kill fast-growing cells in your body.")
+SubClassOf(:chemotherapy :pharmaceutical_treatments)
+
+# Class: :cholangitis (cholangitis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :cholangitis "Ascending cholangitis, also known as acute cholangitis or simply cholangitis, is inflammation of the bile duct (cholangitis), usually caused by bacteria ascending from its junction with the duodenum (first part of the small intestine). It tends to occur if the bile duct is already partially obstructed by gallstones")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :cholangitis "ICD10CM:K83.0")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :cholangitis "ICD9CM:576.1")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :cholangitis "MESH:D002761")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :cholangitis "MONDO:0004789")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :cholangitis "NCI:C26718")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :cholangitis "SNOMEDCT_US_2020_09_01:155831003")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :cholangitis "UMLS_CUI:C0008311")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :cholangitis "disease_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :cholangitis "DOID:9446")
+AnnotationAssertion(rdfs:label :cholangitis "cholangitis")
+SubClassOf(:cholangitis <http://purl.obolibrary.org/obo/DOID_4138>)
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:hasOutome <http://purl.obolibrary.org/obo/DOID_0040085>))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_symptom :acute_pain))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_symptom :altered_mental_status))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_symptom :fever))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_symptom :hepatic_abscess))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_symptom :itching))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_symptom :jaundice))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_symptom :nausea))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_symptom :visceral_pain))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_treatment :antibiotics))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_treatment :percutaneous_transhepatic_cholangeography))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_treatment :remove_gall_stone))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_treatment :stent_placement))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_treatment :transplant))
+SubClassOf(:cholangitis ObjectSomeValuesFrom(:has_treatment :widen_bile_duct))
+SubClassOf(:cholangitis DataSomeValuesFrom(:hasRecurrentValue xsd:integer))
+
+# Class: :choledochal_cyst (choledochal cyst)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :choledochal_cyst "congenital anomaly of the duct (tube) that transports bile from the liver to the gall bladder and small intestine.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :choledochal_cyst "ICD10CM:Q44.4")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :choledochal_cyst "MESH:D015529")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :choledochal_cyst "NCI:C2943")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :choledochal_cyst "SNOMEDCT_US_2020_09_01:30533003")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :choledochal_cyst "UMLS_CUI:C0008340")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :choledochal_cyst "disease_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :choledochal_cyst "DOID:899")
+AnnotationAssertion(rdfs:label :choledochal_cyst "choledochal cyst")
+SubClassOf(:choledochal_cyst <http://purl.obolibrary.org/obo/DOID_4138>)
+
+# Class: :digestiveSystemSymptom (digestive_system_symptom)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :digestiveSystemSymptom "symptoms in the digestive system consists of the gastrointestinal tract plus the accessory organs of digestion.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :digestiveSystemSymptom "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :digestiveSystemSymptom "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :digestiveSystemSymptom "SYMP:0000459")
+AnnotationAssertion(rdfs:label :digestiveSystemSymptom "digestive_system_symptom")
+SubClassOf(:digestiveSystemSymptom :symptomsOfCarolisDisease)
+
+# Class: :diuretics (:diuretics)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :diuretics "diuretic is any substance that promotes diuresis, the increased production of urine. This includes forced diuresis. A diuretic tablet is sometimes colloquially called a water tablet. There are several categories of diuretics. All diuretics increase the excretion of water from the body, through the kidneys.")
+SubClassOf(:diuretics :pharmaceutical_treatments)
+
+# Class: :drain_bile_duct (drain_bile_duct)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :drain_bile_duct "")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :drain_bile_duct "use a tube to enlarge and drain bile duct")
+AnnotationAssertion(rdfs:label :drain_bile_duct "drain_bile_duct")
+SubClassOf(:drain_bile_duct :endoscopic_retrograde_cholangiopancreatography)
+
+# Class: :dyspepsia (abdominal_discomfot)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :dyspepsia "stomach pain")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :dyspepsia "SYMP:0000188")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :dyspepsia "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> :dyspepsia "abdominal pain")
+AnnotationAssertion(rdfs:comment :dyspepsia "syn: abdominal pain")
+AnnotationAssertion(rdfs:label :dyspepsia "abdominal_discomfot")
+SubClassOf(:dyspepsia :digestiveSystemSymptom)
+
+# Class: :endoscopic_band_ligation (endoscopic_band_ligation_treatment)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :endoscopic_band_ligation "procedure that uses elastic bands to treat enlarged veins, or varices, in your esophagus. These abnormal veins develop in the esophagus and have thin walls with high blood pressure running through them. required EGD ADDED")
+AnnotationAssertion(rdfs:label :endoscopic_band_ligation "endoscopic_band_ligation_treatment")
+SubClassOf(:endoscopic_band_ligation :endoscopic_treatment)
+
+# Class: :endoscopic_retrograde_cholangiopancreatography (endoscopic_retrograde_cholangiopancreatography_treatment)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :endoscopic_retrograde_cholangiopancreatography "Endoscopic retrograde cholangiopancreatography (ERCP) is a procedure that combines upper gastrointestinal (GI) endoscopy and x-rays to treat problems of the bile and pancreatic ducts.")
+AnnotationAssertion(rdfs:label :endoscopic_retrograde_cholangiopancreatography "endoscopic_retrograde_cholangiopancreatography_treatment")
+SubClassOf(:endoscopic_retrograde_cholangiopancreatography :endoscopic_treatment)
+
+# Class: :endoscopic_treatment (:endoscopic_treatment)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :endoscopic_treatment "A general term for treatments performed using an endoscope. An endoscope is a small, tube-like instrument that is inserted into the body through a tiny incision or a body opening, such as the mouth. ,")
+SubClassOf(:endoscopic_treatment :treatment)
+
+# Class: :feces_and_droppings_symptom (stool symptoms)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> :feces_and_droppings_symptom "feces_and_droppings_syndrome")
+AnnotationAssertion(rdfs:label :feces_and_droppings_symptom "stool symptoms")
+SubClassOf(:feces_and_droppings_symptom :digestiveSystemSymptom)
+
+# Class: :fever (:fever)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :fever "\"Fever is a neurological and physiological symptom characterized by a rise of body temperature above the normal whether a natural response (as to infection) or artificially induced for therapeutic reasons.\"^^xsd:string")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :fever "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :fever "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :fever "SYMP:0000613")
+AnnotationAssertion(rdfs:comment :fever "syn: pyrexia, temperature")
+SubClassOf(:fever :neurologicalAndPhysiologicalSystemSymptom)
+
+# Class: :fever_specifications (pain_scale)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :fever_specifications "0= no pain
+1-3=mild pain
+4-6= moderate pain
+7-10=extreme pain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :fever_specifications "Pain scale:https://www.healthline.com/health/pain-scale#types
+
+
+***ASK steve can we move pain scale under pain in symptom ontology?
+probably sami needs to work on this- plus open symptom ontology and ask steve what other pain should be included")
+AnnotationAssertion(rdfs:label :fever_specifications "pain_scale")
+EquivalentClasses(:fever_specifications ObjectUnionOf(:mild :moderate :none :severe))
+SubClassOf(:fever_specifications :ValuePartition)
+
+# Class: :gastrointestinal_bleeding (:gastrointestinal_bleeding)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :gastrointestinal_bleeding "bleeding in the gastro intestimal system")
+SubClassOf(:gastrointestinal_bleeding :digestiveSystemSymptom)
+
+# Class: :hematemesis (:hematemesis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :hematemesis "definition A vomiting where there is vomiting of blood")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :hematemesis "symptom ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :hematemesis "SYMP:0019145")
+SubClassOf(:hematemesis :vomiting)
+
+# Class: :hematochezia (:hematochezia)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :hematochezia "blood in stools")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :hematochezia "symptoms")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :hematochezia "SYMP:0000421")
+SubClassOf(:hematochezia :feces_and_droppings_symptom)
+
+# Class: :hepatic_abscess (hepatic abscess)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :hepatic_abscess "liver abscess is defined as a pus-filled mass in the liver that can develop from injury to the liver or an intraabdominal infection disseminated from the portal circulation.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :hepatic_abscess "SYMP:0000295")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :hepatic_abscess "symptoms")
+AnnotationAssertion(rdfs:label :hepatic_abscess "hepatic abscess")
+SubClassOf(:hepatic_abscess :liver_symptom)
+SubClassOf(:hepatic_abscess ObjectSomeValuesFrom(:has_treatment :antibiotics))
+SubClassOf(:hepatic_abscess ObjectSomeValuesFrom(:has_treatment :jejunostomy))
+SubClassOf(:hepatic_abscess ObjectSomeValuesFrom(:has_treatment :percutaneous_aspiration_or_drainage))
+
+# Class: :high_fever (high_fever)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :high_fever "\"High fever is a fever that involved an elevated temperature.\"^^xsd:string
+ASK STEVE: should we include more fever types from SO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :high_fever "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :high_fever "SYMP:0000882")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :high_fever "symptom")
+AnnotationAssertion(rdfs:label :high_fever "high_fever")
+SubClassOf(:high_fever :fever)
+
+# Class: :interventional_radiologic_procedure (:interventional_radiologic_procedure)
+
+SubClassOf(:interventional_radiologic_procedure :treatment)
+
+# Class: :itching (pruritus)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :itching "\"Itching is a skin and integumentary tissue symptom characterized as an uneasy irritating sensation in the upper surface of the skin usually held to result from mild stimulation of pain receptors.\"^^xsd:string")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :itching "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :itching "itching")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :itching "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :itching "SYMP:0000432")
+AnnotationAssertion(rdfs:comment :itching "syn: itching")
+AnnotationAssertion(rdfs:label :itching "pruritus")
+SubClassOf(:itching :skinAndIntegumentarySystemSymptom)
+SubClassOf(:itching ObjectSomeValuesFrom(:has_treatment :puritic_treatment))
+
+# Class: :jaundice (jaundice)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :jaundice "\"Jaundice is a skin and integumentary tissue symptom characterized as a skin and integumentary symptom where a yellowish pigmentation of the skin, tissues, and certain body fluids is caused by the deposition of bile pigments that follows interference with normal production and discharge of bile (as in certain liver diseases) or excessive breakdown of red blood cells (as after internal hemorrhage or in various hemolytic states).\"^^xsd:string")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :jaundice "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :jaundice "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :jaundice "SYMP:0000539")
+AnnotationAssertion(rdfs:label :jaundice "jaundice")
+SubClassOf(:jaundice :skinAndIntegumentarySystemSymptom)
+
+# Class: :jejunostomy (resection)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :jejunostomy "cut out part of the liver")
+AnnotationAssertion(rdfs:label :jejunostomy "resection")
+SubClassOf(:jejunostomy :surgical)
+
+# Class: :liver_disesase (:liver_disesase)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> :liver_disesase "DOID: 2164")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> :liver_disesase "DOID: 2165")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> :liver_disesase "DOID: 46")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :liver_disesase "ICD10CM:K76.9")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :liver_disesase "ICD9CM:573.9")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :liver_disesase "MESH:D008107")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :liver_disesase "NCI:C3196")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :liver_disesase "SNOMEDCT_US_2020_09_01:62857009")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :liver_disesase "UMLS_CUI:C0023895")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :liver_disesase "disease ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :liver_disesase "DOID: 409")
+SubClassOf(:liver_disesase <http://purl.obolibrary.org/obo/DOID_3118>)
+
+# Class: :liver_symptom (:liver_symptom)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :liver_symptom "symptoms")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :liver_symptom "SYMP:0000180")
+SubClassOf(:liver_symptom :digestiveSystemSymptom)
+
+# Class: :local_regional_therapy (:local_regional_therapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :local_regional_therapy "used to administer chemotherapy")
+SubClassOf(:local_regional_therapy :interventional_radiologic_procedure)
+
+# Class: :melena (:melena)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :melena "Melena refers to black stools that occur as a result of gastrointestinal bleeding")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :melena "symptom ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :melena "SYMP: 0000323")
+SubClassOf(:melena :feces_and_droppings_symptom)
+
+# Class: :mild (:mild)
+
+EquivalentClasses(:mild DataSomeValuesFrom(:hasPainScaleValue DataIntersectionOf(DatatypeRestriction(xsd:integer xsd:minInclusive "1"^^xsd:integer) DatatypeRestriction(xsd:integer xsd:maxInclusive "3"^^xsd:integer))))
+SubClassOf(:mild :fever_specifications)
+
+# Class: :moderate (:moderate)
+
+EquivalentClasses(:moderate DataSomeValuesFrom(:hasPainScaleValue DataIntersectionOf(DatatypeRestriction(xsd:integer xsd:minInclusive "4"^^xsd:integer) DatatypeRestriction(xsd:integer xsd:maxInclusive "6"^^xsd:integer))))
+SubClassOf(:moderate :fever_specifications)
+
+# Class: :nausea (nausea)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :nausea "\"Nausea is a digestive system symptom characterized by an uneasy or unsettled feeling in the stomach together with an urge to vomit.\"^^xsd:string")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :nausea "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :nausea "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :nausea "SYMP:0000458")
+AnnotationAssertion(rdfs:label :nausea "nausea")
+SubClassOf(:nausea :digestiveSystemSymptom)
+SubClassOf(:nausea ObjectSomeValuesFrom(:has_treatment :antiemetic))
+
+# Class: :nervousSystemSymptom (nervous_system_symptom)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :nervousSystemSymptom "symptoms in the the network of nerve cells and fibers which transmits nerve impulses between parts of the body.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :nervousSystemSymptom "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :nervousSystemSymptom "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :nervousSystemSymptom "SYMP:0000480")
+AnnotationAssertion(rdfs:label :nervousSystemSymptom "nervous_system_symptom")
+SubClassOf(:nervousSystemSymptom :symptomsOfCarolisDisease)
+
+# Class: :neurologicalAndPhysiologicalSystemSymptom (neurological_and_physiological _system_symptom)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :neurologicalAndPhysiologicalSystemSymptom "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :neurologicalAndPhysiologicalSystemSymptom "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :neurologicalAndPhysiologicalSystemSymptom "SYMP:0000410")
+AnnotationAssertion(rdfs:label :neurologicalAndPhysiologicalSystemSymptom "neurological_and_physiological _system_symptom")
+SubClassOf(:neurologicalAndPhysiologicalSystemSymptom :symptomsOfCarolisDisease)
+
+# Class: :non_recurrent_symptom_status (:non_recurrent_symptom_status)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :non_recurrent_symptom_status "")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :non_recurrent_symptom_status "is a symptom status if symptom occuring only once")
+EquivalentClasses(:non_recurrent_symptom_status ObjectIntersectionOf(:recurrency_value DataSomeValuesFrom(:hasRecurrentValue DatatypeRestriction(xsd:integer xsd:maxInclusive "1"^^xsd:integer))))
+
+# Class: :none (:none)
+
+EquivalentClasses(:none DataSomeValuesFrom(:hasPainScaleValue DatatypeRestriction(xsd:integer xsd:maxInclusive "0"^^xsd:integer)))
+SubClassOf(:none :fever_specifications)
+
+# Class: :octreotide (:octreotide)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :octreotide "In patients with suspected variceal bleeding, octreotide is given as an intravenous bolus")
+SubClassOf(:octreotide :pharmaceutical_treatments)
+
+# Class: :pain (pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :pain "\"A sensation perception where there is an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body.\"^^xsd:string
+
+ASK STEVE- Sami\"shouldnt this pain be connected with the pain scale, and also should we include more pain types from the SO\"")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :pain "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :pain "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :pain "SYMP:000099")
+AnnotationAssertion(rdfs:label :pain "pain")
+SubClassOf(:pain :sensation_perception)
+SubClassOf(:pain ObjectSomeValuesFrom(:has_painscale :fever_specifications))
+SubClassOf(:pain DataSomeValuesFrom(:hasPainScaleValue xsd:integer))
+
+# Class: :paracentesis (:paracentesis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :paracentesis "Paracentesis is a procedure that removes fluid (peritoneal fluid) from the abdomen through a slender needle.")
+SubClassOf(:paracentesis :interventional_radiologic_procedure)
+
+# Class: :percutaneous_aspiration_or_drainage (percutaneous_aspiration_and_drainage)
+
+AnnotationAssertion(rdfs:label :percutaneous_aspiration_or_drainage "percutaneous_aspiration_and_drainage")
+SubClassOf(:percutaneous_aspiration_or_drainage :interventional_radiologic_procedure)
+
+# Class: :percutaneous_transhepatic_cholangeography (percutaneous_transhepatic_cholangiography)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :percutaneous_transhepatic_cholangeography "uses a tube to drain the obstructed bile duck")
+AnnotationAssertion(rdfs:label :percutaneous_transhepatic_cholangeography "percutaneous_transhepatic_cholangiography")
+SubClassOf(:percutaneous_transhepatic_cholangeography :interventional_radiologic_procedure)
+
+# Class: :pharmaceutical_treatments (pharmaceutical_treatment)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :pharmaceutical_treatments "Pharmaceutical therapy, also commonly referred to at pharmacotherapy or pharmacological therapy, refers to the treatment of disease through the application of medications (drugs).")
+AnnotationAssertion(rdfs:label :pharmaceutical_treatments "pharmaceutical_treatment")
+SubClassOf(:pharmaceutical_treatments :treatment)
+
+# Class: :portal_hypertension (portal hypertension)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :portal_hypertension "Portal hypertension is abnormally increased portal venous pressure – blood pressure in the portal vein and its branches, that drain from most of the intestine to the liver.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :portal_hypertension "GARD:8229")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :portal_hypertension "ICD10CM:K76.6")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :portal_hypertension "ICD9CM:572.3")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :portal_hypertension "MESH:D006975")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :portal_hypertension "NCI:C3119")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :portal_hypertension "NOMEDCT_US_2020_09_01:155821005")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :portal_hypertension "disease_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :portal_hypertension "DOID:10762")
+AnnotationAssertion(rdfs:label :portal_hypertension "portal hypertension")
+SubClassOf(:portal_hypertension :liver_disesase)
+SubClassOf(:portal_hypertension ObjectSomeValuesFrom(:has_symptom :ascites))
+SubClassOf(:portal_hypertension ObjectSomeValuesFrom(:has_treatment :transjugular_intrahepatic_portosystemic_shunt))
+SubClassOf(:portal_hypertension ObjectSomeValuesFrom(:has_treatment :transplant))
+
+# Class: :proton_pump_inhibitor (:proton_pump_inhibitor)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :proton_pump_inhibitor "also known as PPIs, are medicines that work by reducing the amount of stomach acid made by glands in the lining of your stomach.")
+SubClassOf(:proton_pump_inhibitor :pharmaceutical_treatments)
+
+# Class: :puritic_treatment (pruritus_treatment)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :puritic_treatment "Pruritus treatment topical, oral, or other treatments (e.g., light therapy)  for systemic itching")
+AnnotationAssertion(rdfs:label :puritic_treatment "pruritus_treatment")
+SubClassOf(:puritic_treatment :pharmaceutical_treatments)
+
+# Class: :radiation_therapy (:radiation_therapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :radiation_therapy "radiation is administered to treat cancer")
+SubClassOf(:radiation_therapy :treatment)
+
+# Class: :recurrency_value (symptom_status)
+
+AnnotationAssertion(rdfs:label :recurrency_value "symptom_status")
+SubClassOf(:recurrency_value owl:Thing)
+SubClassOf(:recurrency_value DataSomeValuesFrom(:hasRecurrentValue xsd:integer))
+
+# Class: :recurrent (recurrent_symptom_status)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :recurrent "is a symptom status if symptom occuring more than once")
+AnnotationAssertion(rdfs:label :recurrent "recurrent_symptom_status")
+EquivalentClasses(:recurrent ObjectIntersectionOf(:recurrency_value DataSomeValuesFrom(:hasRecurrentValue DatatypeRestriction(xsd:integer xsd:minInclusive "2"^^xsd:integer))))
+
+# Class: :remove_gall_stone (dilate_bile_duct)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :remove_gall_stone "The drainage tube is placed through the skin into one of the bile ducts in the liver to allow bile out")
+AnnotationAssertion(rdfs:label :remove_gall_stone "dilate_bile_duct")
+SubClassOf(:remove_gall_stone :drain_bile_duct)
+
+# Class: :roux_en_y (:roux_en_y)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :roux_en_y "a treatment that involves creating a small pouch from the stomach and connecting the newly created pouch directly to the small intestine.")
+SubClassOf(:roux_en_y :surgical)
+
+# Class: :sensation_perception (sensation_perception)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :sensation_perception "\"Sensation perception is a nervous system symptom where the information perceived by sensory receptors are interpreted.\"^^xsd:string")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :sensation_perception "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :sensation_perception "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :sensation_perception "SYMP:0000892")
+AnnotationAssertion(rdfs:label :sensation_perception "sensation_perception")
+SubClassOf(:sensation_perception :nervousSystemSymptom)
+
+# Class: :severe (:severe)
+
+EquivalentClasses(:severe DataSomeValuesFrom(:hasPainScaleValue DataIntersectionOf(DatatypeRestriction(xsd:integer xsd:minInclusive "7"^^xsd:integer) DatatypeRestriction(xsd:integer xsd:maxInclusive "10"^^xsd:integer))))
+SubClassOf(:severe :fever_specifications)
+
+# Class: :skinAndIntegumentarySystemSymptom (skin_and_integumentary_tissue_system_symptom)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :skinAndIntegumentarySystemSymptom "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :skinAndIntegumentarySystemSymptom "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :skinAndIntegumentarySystemSymptom "SYMP:0000488")
+AnnotationAssertion(rdfs:label :skinAndIntegumentarySystemSymptom "skin_and_integumentary_tissue_system_symptom")
+SubClassOf(:skinAndIntegumentarySystemSymptom :symptomsOfCarolisDisease)
+
+# Class: :stent_placement (:stent_placement)
+
+SubClassOf(:stent_placement :drain_bile_duct)
+
+# Class: :surgical (surgical_treatment)
+
+AnnotationAssertion(rdfs:label :surgical "surgical_treatment")
+SubClassOf(:surgical :treatment)
+
+# Class: :symptomsOfCarolisDisease (symptoms)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :symptomsOfCarolisDisease "the experiential state of caroli disease")
+AnnotationAssertion(rdfs:label :symptomsOfCarolisDisease "symptoms")
+SubClassOf(:symptomsOfCarolisDisease owl:Thing)
+SubClassOf(:symptomsOfCarolisDisease DataSomeValuesFrom(:hasRecurrentValue xsd:integer))
+
+# Class: :transjugular_intrahepatic_portosystemic_shunt (transjugular_intrahepatic_portosystemic_shunt)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :transjugular_intrahepatic_portosystemic_shunt "Transjugular Intrahepatic Portosystemic Shunt or TIPS is a procedure that uses imaging guidance to connect the portal vein to the hepatic vein in the liver.")
+AnnotationAssertion(rdfs:label :transjugular_intrahepatic_portosystemic_shunt "transjugular_intrahepatic_portosystemic_shunt")
+SubClassOf(:transjugular_intrahepatic_portosystemic_shunt :interventional_radiologic_procedure)
+
+# Class: :transplant (:transplant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :transplant "Organ transplantation is a medical procedure in which an organ is removed from one body and placed in the body of a recipient, to replace a damaged or missing organ.")
+SubClassOf(:transplant :surgical)
+
+# Class: :treatment (:treatment)
+
+SubClassOf(:treatment owl:Thing)
+
+# Class: :upper_right_quadrant_tenderness (upper_right_quadrant_tenderness)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :upper_right_quadrant_tenderness "when pressure on the upper right part of your stomach causes pain. the upper right quadrant ontains many important organs, including parts of your liver, right kidney, gallbladder, pancreas, and large and small intestine.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :upper_right_quadrant_tenderness "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :upper_right_quadrant_tenderness "symptoms")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :upper_right_quadrant_tenderness "SYMP:0000499")
+AnnotationAssertion(rdfs:label :upper_right_quadrant_tenderness "upper_right_quadrant_tenderness")
+SubClassOf(:upper_right_quadrant_tenderness :abdominal_tenderness)
+
+# Class: :visceral_pain (visceral_pain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :visceral_pain "\"Visceral pain is a pain originated from organ tissues of the thorax, abdomen, or pelvis, It characterizes as deep, vague, difficult to locate pain that radiates away from the affected organ.\"^^xsd:string")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :visceral_pain "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :visceral_pain "SYMP:0000892")
+AnnotationAssertion(rdfs:comment :visceral_pain "syn: pain in the truck area of the body, abdominal pain")
+AnnotationAssertion(rdfs:label :visceral_pain "visceral_pain")
+SubClassOf(:visceral_pain :pain)
+
+# Class: :vomiting (vomiting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> :vomiting "Vomiting, or throwing up, is a forceful discharge of stomach contents.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> :vomiting "DIOD:0050876")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> :vomiting "symptom")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> :vomiting "SYMP:0019145")
+AnnotationAssertion(rdfs:comment :vomiting "syn: throwing up")
+AnnotationAssertion(rdfs:label :vomiting "vomiting")
+SubClassOf(:vomiting :digestiveSystemSymptom)
+
+# Class: :widen_bile_duct (remove_gall_stone)
+
+AnnotationAssertion(rdfs:label :widen_bile_duct "remove_gall_stone")
+SubClassOf(:widen_bile_duct :drain_bile_duct)
+
+# Class: <http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> (variceal_bleeding)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> "bleeding of varices found throughout the gastrointestinal tract, such as in the esophagus, stomach, and rectum")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> "variceal_bleeding")
+SubClassOf(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> :gastrointestinal_bleeding)
+SubClassOf(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> ObjectSomeValuesFrom(:has_sign :hematemesis))
+SubClassOf(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> ObjectSomeValuesFrom(:has_sign :hematochezia))
+SubClassOf(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> ObjectSomeValuesFrom(:has_sign :melena))
+SubClassOf(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> ObjectSomeValuesFrom(:has_treatment :antibiotics))
+SubClassOf(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> ObjectSomeValuesFrom(:has_treatment :endoscopic_band_ligation))
+SubClassOf(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> ObjectSomeValuesFrom(:has_treatment :octreotide))
+SubClassOf(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> ObjectSomeValuesFrom(:has_treatment :proton_pump_inhibitor))
+SubClassOf(<http://purl.obolibrary.org/obo/carolio.owl#variceal+_bleeding> ObjectSomeValuesFrom(:has_treatment :transjugular_intrahepatic_portosystemic_shunt))
+
+
+DisjointClasses(:adominalSymptom :digestiveSystemSymptom :nervousSystemSymptom :neurologicalAndPhysiologicalSystemSymptom :skinAndIntegumentarySystemSymptom)
+DisjointClasses(:endoscopic_treatment :interventional_radiologic_procedure :pharmaceutical_treatments :radiation_therapy :surgical)
+DisjointClasses(:mild :moderate :none :severe)
+)
