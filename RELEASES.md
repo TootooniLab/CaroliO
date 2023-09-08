@@ -42,7 +42,7 @@ Definitions are added to pain scales
 
 
 
-### [v1.5](v1.5)
+### [v1.5](src/ontology/releases/v1.5)
 
 Colangiocarcinoma route has updated based on DO
 "abdomen discomfort" was wrongly located in digestive system symptoms with dyspepsia as name. We consulted with Dr. Steve J. Scaglione and changed the route and name.
@@ -53,13 +53,13 @@ Altered mental status was wrongly positioned under neurological and physiologica
 
 |   | OWL | Properties |
 | --- | --- | --- |
-| Basic | [CaroliO_VB1.5.20230819.owl](1.5/CaroliO_VB1.5.20230819.owl) | [CaroliO_VB1.5.20230819.properties](1.5/CaroliO_VB1.5.20230819.properties) |
+| Basic | [CaroliO_VB1.5.20230819.owl](src/ontology/releases/1.5/CaroliO_VB1.5.20230819.owl) | [CaroliO_VB1.5.20230819.properties](src/ontology/releases/1.5/CaroliO_VB1.5.20230819.properties) |
 
 #### 2023-08-17
 
 |    | OWL |
 | --- | --- |
-| Basic | [CaroliO_VB1.5.20230817.owl](1.5/CaroliO_VB1.5.20230817.owl)
+| Basic | [CaroliO_VB1.5.20230817.owl](src/ontology/releases/1.5/CaroliO_VB1.5.20230817.owl)
 
 
 ### [v1.4-2023-07-26](v1.4)
