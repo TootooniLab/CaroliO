@@ -53,7 +53,7 @@ Altered mental status was wrongly positioned under neurological and physiologica
 
 |   | OWL | Properties |
 | --- | --- | --- |
-| Basic | [CaroliO_VB1.5.20230819.owl](src/ontology/releases/1.5/CaroliO_VB1.5.20230819.owl) | [CaroliO_VB1.5.20230819.properties](src/ontology/releases/1.5/CaroliO_VB1.5.20230819.properties) |
+| Basic | [CaroliO_VB1.5.20230819.owl](src/ontology/releases/v1.5/CaroliO_VB1.5.20230817.owl) | [CaroliO_VB1.5.20230819.properties](src/ontology/releases/1.5/CaroliO_VB1.5.20230819.properties) |
 
 #### 2023-08-17
 
