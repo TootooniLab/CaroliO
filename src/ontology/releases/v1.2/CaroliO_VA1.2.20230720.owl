@@ -7,14 +7,15 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(untitled-ontology-5:=<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#>)
 
 
-Ontology(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5>
-Annotation(untitled-ontology-5:Contributed_by "Julie Slezak"^^xsd:string)
-Annotation(untitled-ontology-5:Contributed_by "M. Samie Tootooni <mtootooni@luc.edu>"^^xsd:string)
-Annotation(untitled-ontology-5:Contributed_by "Steve J. Scaglione"^^xsd:string)
-Annotation(untitled-ontology-5:has_obo_namespace "carolis_ontology")
-Annotation(untitled-ontology-5:title "Caroli's Ontology")
-Annotation(rdfs:comment "CaroliO is an Ontology desined for describing the symptoms, treatment, and outcomes of Caroli's disease. This ontology uses symptom ontology (SO) and Disease Ontology (DO) as upper level ontology.")
-Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+Ontology(<http://purl.obolibrary.org/obo/Carolio.owl>
+Import(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5>)
+Annotation(untitled-ontology-5:Contributed_by "M. Samie Tootooni <mtootooni@luc.edu>
+Julie Slezak
+Steve J. Scaglione"^^xsd:string)
+Annotation(untitled-ontology-5:has_obo_namespace "carolio"^^xsd:string)
+Annotation(untitled-ontology-5:title "Caroli ontology - applied version"^^xsd:string)
+Annotation(rdfs:comment "CaroliO is an Ontology desined for describing the symptoms, treatment, and outcomes of Caroli's disease. This ontology uses relation ontology (RO), symptom ontology (SO) and Disease Ontology (DO) as upper level ontology.")
+Annotation(owl:versionInfo "VA1.2"^^xsd:string)
 
 Declaration(Class(untitled-ontology-5:CarolisDisease))
 Declaration(Class(untitled-ontology-5:ValuePartition))
@@ -157,6 +158,7 @@ ReflexiveObjectProperty(untitled-ontology-5:has_sign)
 
 # Object Property: untitled-ontology-5:has_symptom (untitled-ontology-5:has_symptom)
 
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:has_symptom <http://purl.obolibrary.org/obo/RO_0002452>)
 InverseObjectProperties(untitled-ontology-5:has_symptom untitled-ontology-5:is_symptom_of)
 TransitiveObjectProperty(untitled-ontology-5:has_symptom)
 
@@ -167,6 +169,7 @@ ObjectPropertyRange(untitled-ontology-5:has_treatment untitled-ontology-5:treatm
 
 # Object Property: untitled-ontology-5:isOutcomeof (is_outcome_of)
 
+AnnotationAssertion(untitled-ontology-5:database_cross_reference untitled-ontology-5:isOutcomeof <http://purl.obolibrary.org/obo/RO_0004022>)
 AnnotationAssertion(rdfs:label untitled-ontology-5:isOutcomeof "is_outcome_of")
 TransitiveObjectProperty(untitled-ontology-5:isOutcomeof)
 
@@ -222,12 +225,9 @@ SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-onto
 SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:cholelithiasis))
 SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:upper_right_quadrant_tenderness))
 SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:dyspepsia))
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:fever))
 SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:hepatic_abscess))
-SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:bile_acid))
-SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:jejunostomy))
-SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:puritic_treatment))
-SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:roux_en_y))
-SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transplant))
+SubClassOf(untitled-ontology-5:CarolisDisease ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:itching))
 
 # Class: untitled-ontology-5:abdominal_tenderness (abdominal_tenderness)
 
@@ -285,9 +285,7 @@ AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:ascites "SYMP: 00
 AnnotationAssertion(rdfs:comment untitled-ontology-5:ascites "")
 AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:ascites "An abdominal symptom consisting of an abnormal accumulation of serous fluid in the spaces between tissues and organs in the cavity of the abdomen.")
 SubClassOf(untitled-ontology-5:ascites untitled-ontology-5:adominalSymptom)
-SubClassOf(untitled-ontology-5:ascites ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:diuretics))
-SubClassOf(untitled-ontology-5:ascites ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:paracentesis))
-SubClassOf(untitled-ontology-5:ascites ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt))
+SubClassOf(untitled-ontology-5:ascites ObjectAllValuesFrom(untitled-ontology-5:has_treatment ObjectUnionOf(untitled-ontology-5:diuretics untitled-ontology-5:paracentesis untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt)))
 
 # Class: untitled-ontology-5:bacterial_disease (bacterial_infectious_disease)
 
@@ -358,8 +356,11 @@ SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ont
 SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:cholelithiasis))
 SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:portal_hypertension))
 SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:upper_right_quadrant_tenderness))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:ascites))
 SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:dyspepsia))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:fever))
 SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:hepatic_abscess))
+SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:itching))
 SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_symptom <http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding>))
 SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:bile_acid))
 SubClassOf(untitled-ontology-5:caroli_syndrome ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:jejunostomy))
@@ -388,11 +389,7 @@ DOID:5249")
 AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:cholangiocarcinoma "definition \"A bile duct adenocarcinoma that has_material_basis_in bile duct epithelial cells.\"^^xsd:string")
 AnnotationAssertion(rdfs:label untitled-ontology-5:cholangiocarcinoma "cholangiocarcinoma")
 SubClassOf(untitled-ontology-5:cholangiocarcinoma untitled-ontology-5:bile_duct_cancer)
-SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:chemotherapy))
-SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:jejunostomy))
-SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:local_regional_therapy))
-SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:radiation_therapy))
-SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transplant))
+SubClassOf(untitled-ontology-5:cholangiocarcinoma ObjectAllValuesFrom(untitled-ontology-5:has_treatment ObjectUnionOf(untitled-ontology-5:chemotherapy untitled-ontology-5:jejunostomy untitled-ontology-5:local_regional_therapy untitled-ontology-5:radiation_therapy untitled-ontology-5:transplant)))
 
 # Class: untitled-ontology-5:cholangitis (cholangitis)
 
@@ -411,17 +408,14 @@ SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontolog
 SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:acute_pain))
 SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:altered_mental_status))
 SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:fever))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:hepatic_abscess))
 SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:itching))
 SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:jaundice))
 SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:nausea))
 SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:visceral_pain))
 SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:antibiotics))
-SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:percutaneous_transhepatic_cholangeography))
-SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:puritic_treatment))
-SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:remove_gall_stone))
-SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:stent_placement))
-SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transplant))
-SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:widen_bile_duct))
+SubClassOf(untitled-ontology-5:cholangitis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment ObjectUnionOf(untitled-ontology-5:percutaneous_aspiration_or_drainage untitled-ontology-5:transplant ObjectUnionOf(untitled-ontology-5:remove_gall_stone untitled-ontology-5:stent_placement untitled-ontology-5:widen_bile_duct))))
+SubClassOf(untitled-ontology-5:cholangitis ObjectAllValuesFrom(untitled-ontology-5:has_treatment ObjectUnionOf(untitled-ontology-5:antibiotics ObjectUnionOf(untitled-ontology-5:percutaneous_aspiration_or_drainage untitled-ontology-5:transplant ObjectUnionOf(untitled-ontology-5:remove_gall_stone untitled-ontology-5:stent_placement untitled-ontology-5:widen_bile_duct)))))
 SubClassOf(untitled-ontology-5:cholangitis DataSomeValuesFrom(untitled-ontology-5:hasRecurrentValue xsd:integer))
 
 # Class: untitled-ontology-5:choledochal_cyst (choledochal cyst)
@@ -446,11 +440,8 @@ AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:ch
 AnnotationAssertion(untitled-ontology-5:id untitled-ontology-5:cholelithiasis "DOID:10211")
 AnnotationAssertion(rdfs:label untitled-ontology-5:cholelithiasis "cholelithiasis")
 SubClassOf(untitled-ontology-5:cholelithiasis untitled-ontology-5:gallbladder_disease)
+SubClassOf(untitled-ontology-5:cholelithiasis ObjectSomeValuesFrom(untitled-ontology-5:hasOutome untitled-ontology-5:cholangitis))
 SubClassOf(untitled-ontology-5:cholelithiasis ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:upper_right_quadrant_tenderness))
-SubClassOf(untitled-ontology-5:cholelithiasis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:bile_acid))
-SubClassOf(untitled-ontology-5:cholelithiasis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:jejunostomy))
-SubClassOf(untitled-ontology-5:cholelithiasis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:roux_en_y))
-SubClassOf(untitled-ontology-5:cholelithiasis ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transplant))
 
 # Class: untitled-ontology-5:digestiveSystemSymptom (digestive_system_symptom)
 
@@ -528,11 +519,7 @@ AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:fever_specifications "0
 1-3=mild pain
 4-6= moderate pain
 7-10=extreme pain")
-AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:fever_specifications "Pain scale:https://www.healthline.com/health/pain-scale#types
-
-
-***ASK steve can we move pain scale under pain in symptom ontology?
-probably sami needs to work on this- plus open symptom ontology and ask steve what other pain should be included")
+AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:fever_specifications "Pain scale:https://www.healthline.com/health/pain-scale#types")
 AnnotationAssertion(rdfs:label untitled-ontology-5:fever_specifications "pain_scale")
 EquivalentClasses(untitled-ontology-5:fever_specifications ObjectUnionOf(untitled-ontology-5:mild untitled-ontology-5:moderate untitled-ontology-5:none untitled-ontology-5:severe))
 SubClassOf(untitled-ontology-5:fever_specifications untitled-ontology-5:ValuePartition)
@@ -588,9 +575,7 @@ AnnotationAssertion(untitled-ontology-5:has_obo_namespace untitled-ontology-5:he
 AnnotationAssertion(rdfs:isDefinedBy untitled-ontology-5:hepatic_abscess "liver abscess is defined as a pus-filled mass in the liver that can develop from injury to the liver or an intraabdominal infection disseminated from the portal circulation.")
 AnnotationAssertion(rdfs:label untitled-ontology-5:hepatic_abscess "hepatic abscess")
 SubClassOf(untitled-ontology-5:hepatic_abscess untitled-ontology-5:liver_symptom)
-SubClassOf(untitled-ontology-5:hepatic_abscess ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:antibiotics))
-SubClassOf(untitled-ontology-5:hepatic_abscess ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:jejunostomy))
-SubClassOf(untitled-ontology-5:hepatic_abscess ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:percutaneous_aspiration_or_drainage))
+SubClassOf(untitled-ontology-5:hepatic_abscess ObjectAllValuesFrom(untitled-ontology-5:has_treatment ObjectUnionOf(untitled-ontology-5:antibiotics untitled-ontology-5:jejunostomy untitled-ontology-5:percutaneous_aspiration_or_drainage)))
 
 # Class: untitled-ontology-5:hepatobillary_disease (hepatobiliary_disease)
 
@@ -779,6 +764,7 @@ AnnotationAssertion(rdfs:label untitled-ontology-5:portal_hypertension "portal h
 SubClassOf(untitled-ontology-5:portal_hypertension untitled-ontology-5:liver_disesase)
 SubClassOf(untitled-ontology-5:portal_hypertension ObjectSomeValuesFrom(untitled-ontology-5:has_symptom untitled-ontology-5:ascites))
 SubClassOf(untitled-ontology-5:portal_hypertension ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt))
+SubClassOf(untitled-ontology-5:portal_hypertension ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transplant))
 
 # Class: untitled-ontology-5:proton_pump_inhibitor (untitled-ontology-5:proton_pump_inhibitor)
 
@@ -925,10 +911,9 @@ SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-on
 SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:hematochezia))
 SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_sign untitled-ontology-5:melena))
 SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:antibiotics))
-SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:endoscopic_band_ligation))
 SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:octreotide))
 SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:proton_pump_inhibitor))
-SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt))
+SubClassOf(<http://www.semanticweb.org/julieslezak/ontologies/2021/4/untitled-ontology-5#variceal+_bleeding> ObjectSomeValuesFrom(untitled-ontology-5:has_treatment ObjectUnionOf(untitled-ontology-5:endoscopic_band_ligation untitled-ontology-5:transjugular_intrahepatic_portosystemic_shunt)))
 
 
 DisjointClasses(untitled-ontology-5:adominalSymptom untitled-ontology-5:digestiveSystemSymptom untitled-ontology-5:nervousSystemSymptom untitled-ontology-5:neurologicalAndPhysiologicalSystemSymptom untitled-ontology-5:skinAndIntegumentarySystemSymptom)
