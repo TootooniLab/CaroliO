@@ -42,7 +42,7 @@ Definitions are added to pain scales
 
 
 
-### v1.5
+### [v1.5](https://github.com/TootooniLab/CaroliO/tree/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.5)
 
 Colangiocarcinoma route has updated based on DO
 "abdomen discomfort" was wrongly located in digestive system symptoms with dyspepsia as name. We consulted with Dr. Steve J. Scaglione and changed the route and name.
@@ -53,13 +53,13 @@ Altered mental status was wrongly positioned under neurological and physiologica
 
 |   | OWL | Properties |
 | --- | --- | --- |
-| Basic | [CaroliO_VB1.5.20230819.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.5.20230819.owl) | [CaroliO_VB1.5.20230819.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.5.20230819.properties) |
+| Basic | [CaroliO_VB1.5.20230819.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.5/CaroliO_VB1.5.20230819.owl) | [CaroliO_VB1.5.20230819.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.5/CaroliO_VB1.5.20230819.properties) |
 
 #### 2023-08-17
 
 |    | OWL |
 | --- | --- |
-| Basic | [CaroliO_VB1.5.20230817.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.5.20230817.owl)
+| Basic | [CaroliO_VB1.5.20230817.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.5/CaroliO_VB1.5.20230817.owl)
 
 
 ### v1.4-2023-07-26
@@ -72,7 +72,7 @@ Altered mental status was wrongly positioned under neurological and physiologica
 
 |    | OWL | Properties |
 | --- | --- | --- |
-| Basic | [CaroliO_VB1.4.20230726.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.4.20230726.owl) | [CaroliO_VB1.4.20230726.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.4.20230726.properties) |
+| Basic | [CaroliO_VB1.4.20230726.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.4/CaroliO_VB1.4.20230726.owl) | [CaroliO_VB1.4.20230726.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.4/CaroliO_VB1.4.20230726.properties) |
 
 
 ### v1.3-2023-07-25
@@ -81,31 +81,31 @@ Changed IRI and added OBO namespace
 
 |   | OWL | Properties | 
 | --- | --- | --- |
-| Basic | [CaroliO_VB1.3.20230725.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.3.20230725.owl) | [CaroliO_VB1.3.20230725.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.3.20230725.properties) | 
+| Basic | [CaroliO_VB1.3.20230725.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.3/CaroliO_VB1.3.20230725.owl) | [CaroliO_VB1.3.20230725.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.3/CaroliO_VB1.3.20230725.properties) | 
 
 
 ### v1.2-2023-07-20
 
 |    | OWL | Properties |
 | --- | --- | --- |
-| Applied | [CaroliO_VA1.2.20230720.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VA1.2.20230720.owl) | [CaroliO_VA1.2.20230720.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VA1.2.20230720.properties) |
-| Basic | [CaroliO_VB1.2.20230720.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.2.20230720.owl) | [CaroliO_VB1.2.20230720.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.2.20230720.properties) | 
+| Applied | [CaroliO_VA1.2.20230720.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.2/CaroliO_VA1.2.20230720.owl) | [CaroliO_VA1.2.20230720.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.2/CaroliO_VA1.2.20230720.properties) |
+| Basic | [CaroliO_VB1.2.20230720.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.2/CaroliO_VB1.2.20230720.owl) | [CaroliO_VB1.2.20230720.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.2/CaroliO_VB1.2.20230720.properties) | 
 
 
 ### v1.1-2023-02-07/2023-02-08
 
 |    | OWL | Properties |
 | --- | --- | --- |
-| Applied | [CaroliO_VA1.1.20230207.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VA1.1.20230207.owl) | [CaroliO_VA1.1.20230207.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VA1.1.20230207.properties) | 
-| Basic | [CaroliO_VB1.1.20230208.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.1.20230208.owl) | [CaroliO_VB1.1.20230208.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.1.20230208.properties) |
+| Applied | [CaroliO_VA1.1.20230207.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.1/CaroliO_VA1.1.20230207.owl) | [CaroliO_VA1.1.20230207.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.1/CaroliO_VA1.1.20230207.properties) | 
+| Basic | [CaroliO_VB1.1.20230208.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.1/CaroliO_VB1.1.20230208.owl) | [CaroliO_VB1.1.20230208.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.1/CaroliO_VB1.1.20230208.properties) |
 
 
 ### v1.0-2023-01-31
 
 |    | OWL | Properties |
 | --- | --- | --- |
-| Applied | [CaroliO_VA1.0.20230131.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VA1.0.20230131.owl) | [CaroliO_VA1.0.20230131.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VA1.0.20230131.properties) | 
-| Basic | [CaroliO_VB1.0.20230131.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.0.20230131.owl) | [CaroliO_VB1.0.20230131.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/src/ontology/releases/CaroliO_VB1.0.20230131.properties) |
+| Applied | [CaroliO_VA1.0.20230131.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.0/CaroliO_VA1.0.20230131.owl) | [CaroliO_VA1.0.20230131.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.0/CaroliO_VA1.0.20230131.properties) | 
+| Basic | [CaroliO_VB1.0.20230131.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.0/CaroliO_VB1.0.20230131.owl) | [CaroliO_VB1.0.20230131.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.0/CaroliO_VB1.0.20230131.properties) |
 
 
 
