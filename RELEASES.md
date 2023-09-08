@@ -62,7 +62,7 @@ Altered mental status was wrongly positioned under neurological and physiologica
 | Basic | [CaroliO_VB1.5.20230817.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.5/CaroliO_VB1.5.20230817.owl)
 
 
-### v1.4-2023-07-26
+### [v1.4-2023-07-26](v1.4)
 
 * Added http://purl.obolibrary.org/obo/IAO_0000115 (definition) and re-defined classes with it. 
 * Added other common annotation properties id, has alternative id, has_related_synonym, has_obo_namespace, database_cross_refernce, 	
@@ -75,7 +75,7 @@ Altered mental status was wrongly positioned under neurological and physiologica
 | Basic | [CaroliO_VB1.4.20230726.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.4/CaroliO_VB1.4.20230726.owl) | [CaroliO_VB1.4.20230726.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.4/CaroliO_VB1.4.20230726.properties) |
 
 
-### v1.3-2023-07-25
+### [v1.3-2023-07-25](v1.3)
 
 Changed IRI and added OBO namespace
 
@@ -84,7 +84,7 @@ Changed IRI and added OBO namespace
 | Basic | [CaroliO_VB1.3.20230725.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.3/CaroliO_VB1.3.20230725.owl) | [CaroliO_VB1.3.20230725.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.3/CaroliO_VB1.3.20230725.properties) | 
 
 
-### v1.2-2023-07-20
+### [v1.2-2023-07-20](v1.2)
 
 |    | OWL | Properties |
 | --- | --- | --- |
@@ -92,7 +92,7 @@ Changed IRI and added OBO namespace
 | Basic | [CaroliO_VB1.2.20230720.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.2/CaroliO_VB1.2.20230720.owl) | [CaroliO_VB1.2.20230720.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.2/CaroliO_VB1.2.20230720.properties) | 
 
 
-### v1.1-2023-02-07/2023-02-08
+### [v1.1-2023-02-07/2023-02-08](v1.1)
 
 |    | OWL | Properties |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ Changed IRI and added OBO namespace
 | Basic | [CaroliO_VB1.1.20230208.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.1/CaroliO_VB1.1.20230208.owl) | [CaroliO_VB1.1.20230208.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.1/CaroliO_VB1.1.20230208.properties) |
 
 
-### v1.0-2023-01-31
+### [v1.0-2023-01-31](v1.0)
 
 |    | OWL | Properties |
 | --- | --- | --- |
