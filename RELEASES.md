@@ -42,7 +42,7 @@ Definitions are added to pain scales
 
 
 
-### [v1.5](https://github.com/TootooniLab/CaroliO/tree/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.5)
+### [v1.5](v1.5)
 
 Colangiocarcinoma route has updated based on DO
 "abdomen discomfort" was wrongly located in digestive system symptoms with dyspepsia as name. We consulted with Dr. Steve J. Scaglione and changed the route and name.
