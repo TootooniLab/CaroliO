@@ -36,8 +36,8 @@ Definitions are added to pain scales
 
 |   | OWL | Properties |
 | --- | --- | --- |
-| Applied | [CaroliO_V.A.2.0.20230825.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/CaroliO_V.A.2.0.20230825.owl) | [CaroliO_V.A.2.0.20230825.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/CaroliO_V.A.2.0.20230825.properties) |
-| Basic | [CaroliO_V.B.2.0.20230825.owl](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/CaroliO_V.B.2.0.20230825.owl) | [CaroliO_V.B.2.0.20230825.properties](https://github.com/TootooniLab/CaroliO/blob/99b6aa11260bb2659653ec39a4477463298c09a9/CaroliO_V.B.2.0.20230825.properties) |
+| Applied | [CaroliO_V.A.2.0.20230825.owl](CaroliO_V.A.2.0.20230825.owl) | [CaroliO_V.A.2.0.20230825.properties](CaroliO_V.A.2.0.20230825.properties) |
+| Basic | [CaroliO_V.B.2.0.20230825.owl](CaroliO_V.B.2.0.20230825.owl) | [CaroliO_V.B.2.0.20230825.properties](CaroliO_V.B.2.0.20230825.properties) |
 
 
 
@@ -53,13 +53,13 @@ Altered mental status was wrongly positioned under neurological and physiologica
 
 |   | OWL | Properties |
 | --- | --- | --- |
-| Basic | [CaroliO_VB1.5.20230819.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.5/CaroliO_VB1.5.20230819.owl) | [CaroliO_VB1.5.20230819.properties](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.5/CaroliO_VB1.5.20230819.properties) |
+| Basic | [CaroliO_VB1.5.20230819.owl](CaroliO_VB1.5.20230819.owl) | [CaroliO_VB1.5.20230819.properties](CaroliO_VB1.5.20230819.properties) |
 
 #### 2023-08-17
 
 |    | OWL |
 | --- | --- |
-| Basic | [CaroliO_VB1.5.20230817.owl](https://github.com/TootooniLab/CaroliO/blob/0025ca2bb10511fe698d9b518a0d9ae0d697d5e4/src/ontology/releases/v1.5/CaroliO_VB1.5.20230817.owl)
+| Basic | [CaroliO_VB1.5.20230817.owl](CaroliO_VB1.5.20230817.owl)
 
 
 ### [v1.4-2023-07-26](v1.4)
