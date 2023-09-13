@@ -1,5 +1,7 @@
 # CaroliO
 ![CarolioImage](Graphical_Abstract3_2.png)
+<sup><sub>Liver image source: Asadi, S., et al. (2021). "The Role of Mutations on Gene PKHD1 in Caroli Syndrome." Journal of Gastroenterology and Hepatology 7:1-6</sub></sup>
+
 We present CaroliO, an ontology for Caroli's disease and syndrome, aimed at enhancing the diagnosis and treatment of these rare liver conditions. Our work addresses the pressing need for structured knowledge resources in the field of rare diseases, which often present significant diagnostic and treatment challenges due to limited information.
 
 We developed our ontology in two versions: CaroliO VB, which is the Basic ontology; and CaroliO VA, the Applied Version, which includes more complex axioms i.e. closure axioms and axioms that indicate combinations of scenarios among symptoms, signs, treatments, and outcomes. The Basic Version follows the underlying Open World Assumption and is suitable for ontologists and future researches, while the Applied Version includes more complex axioms to better reflect real world decision making in diagnosis and choosing treatments for Caroli’s disease and syndrome based on our current knowledge.
