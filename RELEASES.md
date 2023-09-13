@@ -5,7 +5,7 @@
 
 ## 2023 Releases
 
-### [v2.0](src/ontology/v2.0)
+### [v2.0](src/ontology/releases/v2.0)
 
 All classes are reviewed to ensure right cross referencings, IRIs, IDs, obo namespaces, labels, definitions, related synonyms, alternative IDs, data base cross references, and definition sources.
 Definitions without sources in the previous version were removed.
@@ -36,8 +36,8 @@ Definitions are added to pain scales
 
 |   | OWL | Properties |
 | --- | --- | --- |
-| Applied | [CaroliO_V.A.2.0.20230825.owl](src/ontology/v2.0/CaroliO_V.A.2.0.20230825.owl) | [CaroliO_V.A.2.0.20230825.properties](src/ontology/v2.0/CaroliO_V.A.2.0.20230825.properties) |
-| Basic | [CaroliO_V.B.2.0.20230825.owl](src/ontology/v2.0/CaroliO_V.B.2.0.20230825.owl) | [CaroliO_V.B.2.0.20230825.properties](src/ontology/v2.0/CaroliO_V.B.2.0.20230825.properties) |
+| Applied | [CaroliO_V.A.2.0.20230825.owl](src/ontology/releases/v2.0/CaroliO_V.A.2.0.20230825.owl) | [CaroliO_V.A.2.0.20230825.properties](src/ontology/releases/v2.0/CaroliO_V.A.2.0.20230825.properties) |
+| Basic | [CaroliO_V.B.2.0.20230825.owl](src/ontology/releases/v2.0/CaroliO_V.B.2.0.20230825.owl) | [CaroliO_V.B.2.0.20230825.properties](src/ontology/releases/v2.0/CaroliO_V.B.2.0.20230825.properties) |
 
 
 
