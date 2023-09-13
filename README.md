@@ -10,5 +10,5 @@ More information can be found at http://purl.obolibrary.org/obo/carolio.owl
 
 |    | OWL | Properties |
 | --- | --- | --- |
-| Applied | [CaroliO_V.A.2.0.20230825.owl](CaroliO_V.A.2.0.20230825.owl) | [CaroliO_V.A.2.0.20230825.properties](CaroliO_V.A.2.0.20230825.properties) |
-| Basic | [CaroliO_V.B.2.0.20230825.owl](CaroliO_V.B.2.0.20230825.owl) | [CaroliO_V.B.2.0.20230825.properties](CaroliO_V.B.2.0.20230825.properties) |
+| Applied | [CaroliO_A.owl](CaroliO_A.owl) | [CaroliO_A.properties](CaroliO_A.properties) |
+| Basic | [CaroliO.owl](CaroliO.owl) | [CaroliO.properties](CaroliO.properties) |
