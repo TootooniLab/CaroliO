@@ -7,7 +7,8 @@
 
 ### [v2.0](src/ontology/releases/v2.0)
 
-All classes are reviewed to ensure right cross referencings, IRIs, IDs, obo namespaces, labels, definitions, related synonyms, alternative IDs, data base cross references, and definition sources.
+Changed version IRI syntax to include YYYY-MM-DD format
+All classes are reviewed to ensure correct cross referencings, IRIs, IDs, obo namespaces, labels, definitions, related synonyms, alternative IDs, data base cross references, and definition sources.
 Definitions without sources in the previous version were removed.
 Some of the symptoms and diseases weren't in their ontologies, so we added them to carolio:
 * "variceal bleeding"
@@ -32,6 +33,8 @@ For the following classes from other ontologies, i.e. Symptom, or Human Disease 
 The "symptom status" label was renamed to "symptom recurrence status" and moved under "value partition" class and became an exhustive class.
 Proper names were replaced for treatment classes, with their definitions and sources.
 Definitions are added to pain scales
+
+Added CC-BY-SA-4.0 license
 
 
 |   | OWL | Properties |
