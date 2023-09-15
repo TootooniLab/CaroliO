@@ -8,6 +8,7 @@
 ### [v2.0](src/ontology/releases/v2.0)
 
 Changed version IRI syntax to include YYYY-MM-DD format
+
 All classes are reviewed to ensure correct cross referencings, IRIs, IDs, obo namespaces, labels, definitions, related synonyms, alternative IDs, data base cross references, and definition sources.
 Definitions without sources in the previous version were removed.
 Some of the symptoms and diseases weren't in their ontologies, so we added them to carolio:
