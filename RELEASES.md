@@ -5,6 +5,19 @@
 
 ## 2023 Releases
 
+
+### [v2.1](src/ontology/releases/v2.1)
+
+Updated IRI formats to `http://purl.obolibrary.org/obo/CAROLIO_XXXXXXX`
+
+Updated license format
+
+|   | OWL |
+| --- | --- |
+| Applied | [Carolio_V.A.2.1.20231005.owl](src/ontology/releases/v2.1/CaroliO_V.A.2.1.20231005.owl) |
+| Basic | [Carolio_V.B.2.1.20231005.owl](src/ontology/releases/v2.1/CaroliO_V.B.2.1.20231005.owl) |
+
+
 ### [v2.0](src/ontology/releases/v2.0)
 
 Changed version IRI syntax to include YYYY-MM-DD format
