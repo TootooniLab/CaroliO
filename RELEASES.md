@@ -5,6 +5,22 @@
 
 ## 2023 Releases
 
+### [v2.2](src/ontology/releases/v2.2)
+
+Removed injected inverse properties and moved SubClass relationships to original object properties:
+  - 'has outcome'
+  - 'has treatment'
+  - 'is symptom of'
+
+Removed label underscores/camel cases
+
+Added ORCIDs for contributors
+
+Changed CC-BY-SA-4.0 License to CC-BY-4.0 License
+
+|   | OWL |
+| --- | --- |
+| Basic | [Carolio_V.B.2.2.20231212.owl](src/ontology/releases/v2.2/CaroliO_V.B.2.2.20231212.owl) |
 
 ### [v2.1](src/ontology/releases/v2.1)
 
